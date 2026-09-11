@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-label="AYMERE — Data & Intelligence">
+  <!-- A mark -->
+  <g>
+    <path fill="#17283f" fill-rule="evenodd"
+          d="M130 14 L192 128 L68 128 Z M130 60 L162 118 L98 118 Z"/>
+    <!-- serif feet -->
+    <rect x="60" y="124" width="26" height="6" fill="#17283f"/>
+    <rect x="174" y="124" width="26" height="6" fill="#17283f"/>
+    <!-- horizon arc -->
+    <path d="M92 90 Q130 74 168 88" fill="none" stroke="#a9683a" stroke-width="3" stroke-linecap="round"/>
+    <!-- rising sun -->
+    <path d="M112 88 A11 11 0 0 1 134 88 Z" fill="#c1854f"/>
+  </g>
+  <!-- wordmark -->
+  <text x="130" y="158" text-anchor="middle"
+        font-family="'Playfair Display', Georgia, serif" font-weight="700"
+        font-size="30" letter-spacing="8" fill="#17283f">AYMERE</text>
+  <text x="130" y="174" text-anchor="middle"
+        font-family="'Lora', Georgia, serif" font-weight="600"
+        font-size="8.5" letter-spacing="5" fill="#a9683a">DATA &amp; INTELLIGENCE</text>
+</svg>
