@@ -24,41 +24,51 @@
           <span class="brand__word"><span class="brand__name">AYMERE</span><span class="brand__sub">Data &amp; Intelligence</span></span>
         </a>
         <ul class="nav__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="diensten.html" data-i18n="nav.diensten">Diensten</a></li>
           <li class="nav__dropdown" data-dropdown>
             <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-oplossingen" data-dropdown-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <ul class="nav__dropdown-menu" id="dropdown-oplossingen">
-              <li><a href="huisartspraktijken.html">Huisartspraktijken</a></li>
-              <li><a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a></li>
-              <li><a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a></li>
+              <li><a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a></li>
+              <li><a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
+              <li><a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
             </ul>
           </li>
-          <li><a href="over.html">Over Aymere</a></li>
-          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="over.html" data-i18n="nav.over">Over Aymere</a></li>
+          <li><a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav__lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </li>
         </ul>
-        <div class="nav__cta"><a class="btn btn-primary" href="contact.html">Plan een kennismaking</a></div>
-        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+        <div class="nav__cta"><a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Plan een kennismaking</a></div>
+        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
         <div class="nav__drawer" id="mobile-nav">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
           <div class="nav__drawer-group" data-drawer-group>
             <button class="nav__drawer-toggle" type="button" aria-expanded="false" aria-controls="drawer-oplossingen" data-drawer-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="nav__drawer-submenu" id="drawer-oplossingen">
-              <a href="huisartspraktijken.html">Huisartspraktijken</a>
-              <a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a>
-              <a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a>
+              <a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a>
+              <a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
+              <a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
             </div>
           </div>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="nav__drawer-lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
         </div>
       </nav>
     </div>
@@ -69,15 +79,15 @@
       <div class="container">
         <div class="contact-grid">
           <div class="contact-info">
-            <p class="eyebrow">Contact</p>
-            <h1 class="h-display">Laten we uw uitdaging<br><span class="accent">bespreken.</span></h1>
-            <p class="lead">Wilt u meer inzicht, beter vooruit plannen of capaciteit slimmer inzetten?
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h1 class="h-display" data-i18n="contact.h1">Laten we uw uitdaging<br><span class="accent">bespreken.</span></h1>
+            <p class="lead" data-i18n="contact.lead">Wilt u meer inzicht, beter vooruit plannen of capaciteit slimmer inzetten?
               Neem vrijblijvend contact met ons op.</p>
 
             <div class="contact-info__list">
               <div class="contact-line">
                 <span class="contact-line__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg></span>
-                <span><strong>Parsa Pourfar</strong><em>Oprichter, Aymere</em></span>
+                <span><strong>Parsa Pourfar</strong><em data-i18n="contact.founder">Oprichter, Aymere</em></span>
               </div>
               <div class="contact-line">
                 <span class="contact-line__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg></span>
@@ -85,41 +95,41 @@
               </div>
               <div class="contact-line">
                 <span class="contact-line__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
-                <span><strong>Amsterdam &middot; Nederland</strong></span>
+                <span><strong data-i18n="contact.location">Amsterdam &middot; Nederland</strong></span>
               </div>
             </div>
 
             <div class="contact-note">
-              <p>U hoeft nog niet te weten welk model, dashboard of welke analyse u nodig heeft.
+              <p data-i18n="contact.note">U hoeft nog niet te weten welk model, dashboard of welke analyse u nodig heeft.
                 Dat is onze taak. Begin met uw vraag.</p>
             </div>
           </div>
 
           <div class="form-panel">
-            <p class="eyebrow">Start een gesprek</p>
+            <p class="eyebrow" data-i18n="contact.form.eyebrow">Start een gesprek</p>
             <form data-contact-form novalidate>
               <div class="field">
-                <label for="cf-name">Naam</label>
-                <input id="cf-name" name="name" type="text" placeholder="Uw naam" autocomplete="name">
+                <label for="cf-name" data-i18n="contact.form.name.label">Naam</label>
+                <input id="cf-name" name="name" type="text" placeholder="Uw naam" data-i18n-placeholder="contact.form.name.ph" autocomplete="name">
               </div>
               <div class="field">
-                <label for="cf-org">Bedrijfsnaam</label>
-                <input id="cf-org" name="organisation" type="text" placeholder="Uw bedrijfsnaam" autocomplete="organization">
+                <label for="cf-org" data-i18n="contact.form.org.label">Bedrijfsnaam</label>
+                <input id="cf-org" name="organisation" type="text" placeholder="Uw bedrijfsnaam" data-i18n-placeholder="contact.form.org.ph" autocomplete="organization">
               </div>
               <div class="field">
-                <label for="cf-email">E-mailadres</label>
-                <input id="cf-email" name="email" type="email" placeholder="u@bedrijf.nl" autocomplete="email">
+                <label for="cf-email" data-i18n="contact.form.email.label">E-mailadres</label>
+                <input id="cf-email" name="email" type="email" placeholder="u@bedrijf.nl" data-i18n-placeholder="contact.form.email.ph" autocomplete="email">
               </div>
               <div class="field">
-                <label for="cf-phone">Telefoonnummer <span class="hint">Optioneel</span></label>
-                <input id="cf-phone" name="phone" type="tel" placeholder="06 12345678" autocomplete="tel">
+                <label for="cf-phone"><span data-i18n="contact.form.phone.label">Telefoonnummer</span> <span class="hint" data-i18n="contact.form.optional">Optioneel</span></label>
+                <input id="cf-phone" name="phone" type="tel" placeholder="06 12345678" data-i18n-placeholder="contact.form.phone.ph" autocomplete="tel">
               </div>
               <div class="field">
-                <label for="cf-msg">Uw vraag of uitdaging</label>
-                <textarea id="cf-msg" name="message" placeholder="Vertel ons over de vraag, uitdaging of beslissing waar u tegenaan loopt…"></textarea>
+                <label for="cf-msg" data-i18n="contact.form.msg.label">Uw vraag of uitdaging</label>
+                <textarea id="cf-msg" name="message" placeholder="Vertel ons over de vraag, uitdaging of beslissing waar u tegenaan loopt…" data-i18n-placeholder="contact.form.msg.ph"></textarea>
               </div>
-              <button class="btn btn-primary" type="submit">Verstuur <span class="arrow">&rarr;</span></button>
-              <a class="btn btn-outline" href="mailto:contact@aymere.nl" style="margin-top:.75rem">Plan direct een kennismaking</a>
+              <button class="btn btn-primary" type="submit" data-i18n="contact.form.submit">Verstuur <span class="arrow">&rarr;</span></button>
+              <a class="btn btn-outline" href="mailto:contact@aymere.nl" style="margin-top:.75rem" data-i18n="contact.form.direct">Plan direct een kennismaking</a>
               <p class="form-note" data-form-note role="status" aria-live="polite"></p>
             </form>
           </div>
@@ -143,24 +153,25 @@
             </svg>
             <span class="brand__word"><span class="brand__name" style="font-size:1.2rem">AYMERE</span></span>
           </a>
-          <p class="footer__desc">Data consultancy voor het Nederlandse mkb.</p>
+          <p class="footer__desc" data-i18n="footer.desc">Data consultancy voor het Nederlandse mkb.</p>
         </div>
         <nav class="footer__nav" aria-label="Footer">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
-          <a href="oplossingen.html">Oplossingen</a>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
+          <a href="oplossingen.html" data-i18n="nav.oplossingen">Oplossingen</a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="footer__meta">
           <a href="mailto:contact@aymere.nl">contact@aymere.nl</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Privacyverklaring</a>
+          <a href="#" data-i18n="footer.linkedin">LinkedIn</a>
+          <a href="#" data-i18n="footer.privacy">Privacyverklaring</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

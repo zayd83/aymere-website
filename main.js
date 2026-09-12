@@ -25,7 +25,8 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var note = form.querySelector('[data-form-note]');
-      if (note) { note.textContent = 'Bedankt — uw bericht is genoteerd. We nemen contact met u op. (Dit formulier is nog niet gekoppeld; sluit het aan op e-mail of een service voor livegang.)'; }
+      var fallback = 'Bedankt — uw bericht is genoteerd. We nemen contact met u op. (Dit formulier is nog niet gekoppeld; sluit het aan op e-mail of een service voor livegang.)';
+      if (note) { note.textContent = (window.AYMERE_T && window.AYMERE_T('contact.form.note')) || fallback; }
       form.reset();
     });
   }

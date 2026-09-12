@@ -24,41 +24,51 @@
           <span class="brand__word"><span class="brand__name">AYMERE</span><span class="brand__sub">Data &amp; Intelligence</span></span>
         </a>
         <ul class="nav__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="diensten.html" data-i18n="nav.diensten">Diensten</a></li>
           <li class="nav__dropdown" data-dropdown>
             <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-oplossingen" data-dropdown-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <ul class="nav__dropdown-menu" id="dropdown-oplossingen">
-              <li><a href="huisartspraktijken.html">Huisartspraktijken</a></li>
-              <li><a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a></li>
-              <li><a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a></li>
+              <li><a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a></li>
+              <li><a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
+              <li><a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
             </ul>
           </li>
-          <li><a href="over.html" aria-current="page">Over Aymere</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="over.html" aria-current="page" data-i18n="nav.over">Over Aymere</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav__lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </li>
         </ul>
-        <div class="nav__cta"><a class="btn btn-primary" href="contact.html">Plan een kennismaking</a></div>
-        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+        <div class="nav__cta"><a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Plan een kennismaking</a></div>
+        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
         <div class="nav__drawer" id="mobile-nav">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
           <div class="nav__drawer-group" data-drawer-group>
             <button class="nav__drawer-toggle" type="button" aria-expanded="false" aria-controls="drawer-oplossingen" data-drawer-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="nav__drawer-submenu" id="drawer-oplossingen">
-              <a href="huisartspraktijken.html">Huisartspraktijken</a>
-              <a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a>
-              <a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a>
+              <a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a>
+              <a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
+              <a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
             </div>
           </div>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="nav__drawer-lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
         </div>
       </nav>
     </div>
@@ -69,9 +79,9 @@
       <div class="container">
         <div class="page-hero__grid">
           <div class="page-hero__main">
-            <p class="eyebrow eyebrow--dark">Over Aymere</p>
-            <h1 class="h-display">Over Aymere.</h1>
-            <p class="lead">Aymere is een Nederlands data-consultancybedrijf voor het mkb.</p>
+            <p class="eyebrow eyebrow--dark" data-i18n="over.eyebrow">Over Aymere</p>
+            <h1 class="h-display" data-i18n="over.h1">Over Aymere.</h1>
+            <p class="lead" data-i18n="over.lead">Aymere is een Nederlands data-consultancybedrijf voor het mkb.</p>
           </div>
         </div>
       </div>
@@ -81,9 +91,9 @@
       <div class="container">
         <div class="about-intro">
           <div>
-            <p>Wij combineren econometrie, operations research en data science om organisaties te
+            <p data-i18n="over.intro1">Wij combineren econometrie, operations research en data science om organisaties te
               helpen beter te voorspellen, plannen en beslissen.</p>
-            <p>Onze kracht ligt niet alleen in het analyseren van data. We vertalen complexe data
+            <p data-i18n="over.intro2">Onze kracht ligt niet alleen in het analyseren van data. We vertalen complexe data
               naar concrete oplossingen die binnen een organisatie gebruikt kunnen worden.</p>
           </div>
           <div class="canal canal--dusk about-intro__photo" role="img" aria-label="Amsterdamse gracht in de avond"></div>
@@ -93,49 +103,49 @@
 
     <section class="section" style="padding-top:0">
       <div class="container">
-        <p class="eyebrow eyebrow--dark" style="margin-bottom:1.75rem">Ons team</p>
+        <p class="eyebrow eyebrow--dark" style="margin-bottom:1.75rem" data-i18n="over.team.eyebrow">Ons team</p>
         <div class="team">
-          <div class="member"><div class="member__avatar">PP</div><p class="member__name">Parsa Pourfar</p><p class="member__role">Oprichter &middot; Data Consultant</p><p class="member__role">Econometrie &middot; Operations Research &middot; Forecasting</p></div>
-          <div class="member"><div class="member__avatar">RE</div><p class="member__name">Rafik El Hadouchi</p><p class="member__role">Data Consultant</p><p class="member__role">Data Science &middot; Statistiek &middot; Dashboarding</p></div>
-          <div class="member"><div class="member__avatar">RL</div><p class="member__name">Rida Lahmame</p><p class="member__role">Data Consultant</p><p class="member__role">Forecasting &middot; Optimalisatie &middot; Data-analyse</p></div>
-          <div class="member"><div class="member__avatar">AP</div><p class="member__name">Arya Pourfar</p><p class="member__role">Data Consultant</p><p class="member__role">Predictive Analytics &middot; Statistiek &middot; Data Science</p></div>
-          <div class="member"><div class="member__avatar">MvH</div><p class="member__name">Michael van Hal</p><p class="member__role">Klantrelaties &middot; Woordvoerder</p></div>
+          <div class="member"><div class="member__avatar">PP</div><p class="member__name">Parsa Pourfar</p><p class="member__role" data-i18n="over.team.m1.role">Oprichter &middot; Data Consultant</p><p class="member__role" data-i18n="over.team.m1.expertise">Econometrie &middot; Operations Research &middot; Forecasting</p></div>
+          <div class="member"><div class="member__avatar">RE</div><p class="member__name">Rafik El Hadouchi</p><p class="member__role" data-i18n="over.team.m2.role">Data Consultant</p><p class="member__role" data-i18n="over.team.m2.expertise">Data Science &middot; Statistiek &middot; Dashboarding</p></div>
+          <div class="member"><div class="member__avatar">RL</div><p class="member__name">Rida Lahmame</p><p class="member__role" data-i18n="over.team.m3.role">Data Consultant</p><p class="member__role" data-i18n="over.team.m3.expertise">Forecasting &middot; Optimalisatie &middot; Data-analyse</p></div>
+          <div class="member"><div class="member__avatar">AP</div><p class="member__name">Arya Pourfar</p><p class="member__role" data-i18n="over.team.m4.role">Data Consultant</p><p class="member__role" data-i18n="over.team.m4.expertise">Predictive Analytics &middot; Statistiek &middot; Data Science</p></div>
+          <div class="member"><div class="member__avatar">MvH</div><p class="member__name">Michael van Hal</p><p class="member__role" data-i18n="over.team.m5.role">Klantrelaties &middot; Woordvoerder</p></div>
         </div>
       </div>
     </section>
 
     <section class="section" style="padding-top:0">
       <div class="container">
-        <p class="eyebrow eyebrow--dark" style="margin-bottom:1rem">Onze expertise</p>
-        <p class="lead" style="margin-bottom:1.75rem">Onze technische basis waarmee we uw vraagstukken oplossen.</p>
+        <p class="eyebrow eyebrow--dark" style="margin-bottom:1rem" data-i18n="over.expertise.eyebrow">Onze expertise</p>
+        <p class="lead" style="margin-bottom:1.75rem" data-i18n="over.expertise.lead">Onze technische basis waarmee we uw vraagstukken oplossen.</p>
         <div class="principles">
           <article class="principle">
             <span class="principle__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M6 15l4-5 3 3 5-7"/><circle cx="18" cy="6" r="1.2" fill="currentColor" stroke="none"/></svg></span>
-            <h3>Econometrie</h3>
+            <h3 data-i18n="over.expertise.item1">Econometrie</h3>
           </article>
           <article class="principle">
             <span class="principle__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="9" y="2.5" width="6" height="4" rx=".5"/><path d="M12 6.5v2.5M12 9l-6.5 4M12 9l6.5 4"/><rect x="2" y="15" width="7" height="4" rx=".5"/><rect x="15" y="15" width="7" height="4" rx=".5"/></svg></span>
-            <h3>Operations Research</h3>
+            <h3 data-i18n="over.expertise.item2">Operations Research</h3>
           </article>
           <article class="principle">
             <span class="principle__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M4 19 20 5"/><circle cx="6" cy="16" r="1" fill="currentColor" stroke="none"/><circle cx="9.5" cy="13" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="18.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
-            <h3>Data Science</h3>
+            <h3 data-i18n="over.expertise.item3">Data Science</h3>
           </article>
           <article class="principle">
             <span class="principle__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M5 16l4-3 3 2 4-6"/><path d="M16 9l4-2" stroke-dasharray="2.2 2.2"/></svg></span>
-            <h3>Forecasting</h3>
+            <h3 data-i18n="over.expertise.item4">Forecasting</h3>
           </article>
           <article class="principle">
             <span class="principle__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7h5M12 7h9M3 12h11M18 12h3M3 17h8M15 17h6"/><circle cx="9" cy="7" r="1.7" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="11.5" cy="17" r="1.7" fill="currentColor" stroke="none"/></svg></span>
-            <h3>Optimalisatie</h3>
+            <h3 data-i18n="over.expertise.item5">Optimalisatie</h3>
           </article>
           <article class="principle">
             <span class="principle__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1"/></svg></span>
-            <h3>Dashboarding</h3>
+            <h3 data-i18n="over.expertise.item6">Dashboarding</h3>
           </article>
           <article class="principle principle--span2">
             <span class="principle__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20h16M5 20V9m5 11V9m4 11V9m5 11V9M12 3 3 8h18Z"/></svg></span>
-            <h3>Statistische analyse</h3>
+            <h3 data-i18n="over.expertise.item7">Statistische analyse</h3>
           </article>
         </div>
       </div>
@@ -155,24 +165,25 @@
             </svg>
             <span class="brand__word"><span class="brand__name" style="font-size:1.2rem">AYMERE</span></span>
           </a>
-          <p class="footer__desc">Data consultancy voor het Nederlandse mkb.</p>
+          <p class="footer__desc" data-i18n="footer.desc">Data consultancy voor het Nederlandse mkb.</p>
         </div>
         <nav class="footer__nav" aria-label="Footer">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
-          <a href="oplossingen.html">Oplossingen</a>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
+          <a href="oplossingen.html" data-i18n="nav.oplossingen">Oplossingen</a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="footer__meta">
           <a href="mailto:contact@aymere.nl">contact@aymere.nl</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Privacyverklaring</a>
+          <a href="#" data-i18n="footer.linkedin">LinkedIn</a>
+          <a href="#" data-i18n="footer.privacy">Privacyverklaring</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

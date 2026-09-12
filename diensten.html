@@ -24,41 +24,51 @@
           <span class="brand__word"><span class="brand__name">AYMERE</span><span class="brand__sub">Data &amp; Intelligence</span></span>
         </a>
         <ul class="nav__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="diensten.html" aria-current="page">Diensten</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="diensten.html" aria-current="page" data-i18n="nav.diensten">Diensten</a></li>
           <li class="nav__dropdown" data-dropdown>
             <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-oplossingen" data-dropdown-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <ul class="nav__dropdown-menu" id="dropdown-oplossingen">
-              <li><a href="huisartspraktijken.html">Huisartspraktijken</a></li>
-              <li><a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a></li>
-              <li><a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a></li>
+              <li><a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a></li>
+              <li><a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
+              <li><a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
             </ul>
           </li>
-          <li><a href="over.html">Over Aymere</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="over.html" data-i18n="nav.over">Over Aymere</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav__lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </li>
         </ul>
-        <div class="nav__cta"><a class="btn btn-primary" href="contact.html">Plan een kennismaking</a></div>
-        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+        <div class="nav__cta"><a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Plan een kennismaking</a></div>
+        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
         <div class="nav__drawer" id="mobile-nav">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
           <div class="nav__drawer-group" data-drawer-group>
             <button class="nav__drawer-toggle" type="button" aria-expanded="false" aria-controls="drawer-oplossingen" data-drawer-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="nav__drawer-submenu" id="drawer-oplossingen">
-              <a href="huisartspraktijken.html">Huisartspraktijken</a>
-              <a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a>
-              <a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a>
+              <a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a>
+              <a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
+              <a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
             </div>
           </div>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="nav__drawer-lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
         </div>
       </nav>
     </div>
@@ -69,12 +79,12 @@
       <div class="container">
         <div class="page-hero__grid">
           <div class="page-hero__main">
-            <p class="eyebrow">Onze diensten</p>
-            <h1 class="h-display">Van beter inzicht<br><span class="accent">tot slimmere planning.</span></h1>
-            <p class="lead">Van beter inzicht tot slimme voorspellingen en geoptimaliseerde planning.</p>
+            <p class="eyebrow" data-i18n="diensten.eyebrow">Onze diensten</p>
+            <h1 class="h-display" data-i18n="diensten.h1">Van beter inzicht<br><span class="accent">tot slimmere planning.</span></h1>
+            <p class="lead" data-i18n="diensten.lead">Van beter inzicht tot slimme voorspellingen en geoptimaliseerde planning.</p>
           </div>
           <aside class="page-hero__aside">
-            <p class="pull">Van inzicht<br>naar actie.</p>
+            <p class="pull" data-i18n="diensten.pull">Van inzicht<br>naar actie.</p>
           </aside>
         </div>
       </div>
@@ -85,43 +95,43 @@
         <div class="svc-grid">
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1"/></svg></span>
-            <div class="svc__kicker"><span class="svc__num">01</span><span class="svc__pillar">Dashboards</span></div>
-            <h3 class="svc__title">KPI-dashboards &amp; managementinformatie</h3>
-            <p class="svc__body">Wij brengen belangrijke bedrijfsinformatie samen in één overzichtelijk dashboard. Hierdoor ziet u direct hoe uw organisatie presteert en waar aandacht nodig is.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)">Omzet &middot; kosten &middot; capaciteit &middot; productiviteit &middot; bezettingsgraad &middot; wachttijden &middot; personeelsinzet &middot; klant- of patiëntvolume</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem">Geschikt voor organisaties die veel data hebben, maar onvoldoende overzicht.</p>
+            <div class="svc__kicker"><span class="svc__num">01</span><span class="svc__pillar" data-i18n="diensten.item1.pillar">Dashboards</span></div>
+            <h3 class="svc__title" data-i18n="diensten.item1.title">KPI-dashboards &amp; managementinformatie</h3>
+            <p class="svc__body" data-i18n="diensten.item1.body">Wij brengen belangrijke bedrijfsinformatie samen in één overzichtelijk dashboard. Hierdoor ziet u direct hoe uw organisatie presteert en waar aandacht nodig is.</p>
+            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item1.list">Omzet &middot; kosten &middot; capaciteit &middot; productiviteit &middot; bezettingsgraad &middot; wachttijden &middot; personeelsinzet &middot; klant- of patiëntvolume</p>
+            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item1.fit">Geschikt voor organisaties die veel data hebben, maar onvoldoende overzicht.</p>
           </article>
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M5 16l4-3 3 2 4-6"/><path d="M16 9l4-2" stroke-dasharray="2.2 2.2"/></svg></span>
-            <div class="svc__kicker"><span class="svc__num">02</span><span class="svc__pillar">Voorspellen</span></div>
-            <h3 class="svc__title">Voorspellingen</h3>
-            <p class="svc__body">Wij gebruiken historische gegevens en statistische modellen om toekomstige ontwikkelingen te voorspellen.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)">Vraagvoorspelling &middot; omzetforecast &middot; drukte voorspellen &middot; personeelsbehoefte &middot; capaciteitsbehoefte &middot; seizoenspatronen</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem">Geschikt voor organisaties die beter vooruit willen plannen.</p>
+            <div class="svc__kicker"><span class="svc__num">02</span><span class="svc__pillar" data-i18n="diensten.item2.pillar">Voorspellen</span></div>
+            <h3 class="svc__title" data-i18n="diensten.item2.title">Voorspellingen</h3>
+            <p class="svc__body" data-i18n="diensten.item2.body">Wij gebruiken historische gegevens en statistische modellen om toekomstige ontwikkelingen te voorspellen.</p>
+            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item2.list">Vraagvoorspelling &middot; omzetforecast &middot; drukte voorspellen &middot; personeelsbehoefte &middot; capaciteitsbehoefte &middot; seizoenspatronen</p>
+            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item2.fit">Geschikt voor organisaties die beter vooruit willen plannen.</p>
           </article>
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7h5M12 7h9M3 12h11M18 12h3M3 17h8M15 17h6"/><circle cx="9" cy="7" r="1.7" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="11.5" cy="17" r="1.7" fill="currentColor" stroke="none"/></svg></span>
-            <div class="svc__kicker"><span class="svc__num">03</span><span class="svc__pillar">Plannen</span></div>
-            <h3 class="svc__title">Planning &amp; optimalisatie</h3>
-            <p class="svc__body">Wij berekenen hoe mensen, tijd en middelen zo efficiënt mogelijk kunnen worden ingezet.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)">Personeelsplanning &middot; roosteroptimalisatie &middot; capaciteitsplanning &middot; agenda-optimalisatie &middot; voorraadplanning &middot; resource allocation</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem">Geschikt voor organisaties waar capaciteit schaars is en planning complex wordt.</p>
+            <div class="svc__kicker"><span class="svc__num">03</span><span class="svc__pillar" data-i18n="diensten.item3.pillar">Plannen</span></div>
+            <h3 class="svc__title" data-i18n="diensten.item3.title">Planning &amp; optimalisatie</h3>
+            <p class="svc__body" data-i18n="diensten.item3.body">Wij berekenen hoe mensen, tijd en middelen zo efficiënt mogelijk kunnen worden ingezet.</p>
+            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item3.list">Personeelsplanning &middot; roosteroptimalisatie &middot; capaciteitsplanning &middot; agenda-optimalisatie &middot; voorraadplanning &middot; resource allocation</p>
+            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item3.fit">Geschikt voor organisaties waar capaciteit schaars is en planning complex wordt.</p>
           </article>
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M6 15l4-5 3 3 5-7"/><circle cx="18" cy="6" r="1.2" fill="currentColor" stroke="none"/></svg></span>
-            <div class="svc__kicker"><span class="svc__num">04</span><span class="svc__pillar">Analyseren</span></div>
-            <h3 class="svc__title">Data-analyse</h3>
-            <p class="svc__body">Wij onderzoeken bedrijfsdata om knelpunten, patronen, verspilling en kansen zichtbaar te maken.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)">Procesanalyse &middot; performance-analyse &middot; klantanalyse &middot; scenarioanalyse &middot; knelpuntanalyse</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem">Geschikt voor organisaties die willen begrijpen waarom bepaalde resultaten ontstaan.</p>
+            <div class="svc__kicker"><span class="svc__num">04</span><span class="svc__pillar" data-i18n="diensten.item4.pillar">Analyseren</span></div>
+            <h3 class="svc__title" data-i18n="diensten.item4.title">Data-analyse</h3>
+            <p class="svc__body" data-i18n="diensten.item4.body">Wij onderzoeken bedrijfsdata om knelpunten, patronen, verspilling en kansen zichtbaar te maken.</p>
+            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item4.list">Procesanalyse &middot; performance-analyse &middot; klantanalyse &middot; scenarioanalyse &middot; knelpuntanalyse</p>
+            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item4.fit">Geschikt voor organisaties die willen begrijpen waarom bepaalde resultaten ontstaan.</p>
           </article>
           <article class="svc svc--span2">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8M20 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 16M4 21v-5h5"/></svg></span>
-            <div class="svc__kicker"><span class="svc__num">05</span><span class="svc__pillar">Monitoren</span></div>
-            <h3 class="svc__title">Doorlopende monitoring &amp; advies</h3>
-            <p class="svc__body">Wij kunnen dashboards, forecasts en optimalisatiemodellen na oplevering blijven actualiseren.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)">Maandelijkse KPI-monitoring &middot; periodieke forecast &middot; herberekening van planning &middot; managementrapportage &middot; periodiek advies</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem">Geschikt voor organisaties die structureel op data willen sturen.</p>
+            <div class="svc__kicker"><span class="svc__num">05</span><span class="svc__pillar" data-i18n="diensten.item5.pillar">Monitoren</span></div>
+            <h3 class="svc__title" data-i18n="diensten.item5.title">Doorlopende monitoring &amp; advies</h3>
+            <p class="svc__body" data-i18n="diensten.item5.body">Wij kunnen dashboards, forecasts en optimalisatiemodellen na oplevering blijven actualiseren.</p>
+            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item5.list">Maandelijkse KPI-monitoring &middot; periodieke forecast &middot; herberekening van planning &middot; managementrapportage &middot; periodiek advies</p>
+            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item5.fit">Geschikt voor organisaties die structureel op data willen sturen.</p>
           </article>
         </div>
       </div>
@@ -130,7 +140,7 @@
     <section class="section" style="padding-top:0">
       <div class="container">
         <div class="how-close">
-          <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
         </div>
       </div>
     </section>
@@ -149,24 +159,25 @@
             </svg>
             <span class="brand__word"><span class="brand__name" style="font-size:1.2rem">AYMERE</span></span>
           </a>
-          <p class="footer__desc">Data consultancy voor het Nederlandse mkb.</p>
+          <p class="footer__desc" data-i18n="footer.desc">Data consultancy voor het Nederlandse mkb.</p>
         </div>
         <nav class="footer__nav" aria-label="Footer">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
-          <a href="oplossingen.html">Oplossingen</a>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
+          <a href="oplossingen.html" data-i18n="nav.oplossingen">Oplossingen</a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="footer__meta">
           <a href="mailto:contact@aymere.nl">contact@aymere.nl</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Privacyverklaring</a>
+          <a href="#" data-i18n="footer.linkedin">LinkedIn</a>
+          <a href="#" data-i18n="footer.privacy">Privacyverklaring</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

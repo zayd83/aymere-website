@@ -24,41 +24,51 @@
           <span class="brand__word"><span class="brand__name">AYMERE</span><span class="brand__sub">Data &amp; Intelligence</span></span>
         </a>
         <ul class="nav__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="diensten.html" data-i18n="nav.diensten">Diensten</a></li>
           <li class="nav__dropdown" data-dropdown>
             <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-oplossingen" data-dropdown-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <ul class="nav__dropdown-menu" id="dropdown-oplossingen">
-              <li><a href="huisartspraktijken.html">Huisartspraktijken</a></li>
-              <li><a href="oplossingen.html#retail" aria-current="page">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a></li>
-              <li><a href="oplossingen.html#zakelijke-dienstverlening" aria-current="page">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a></li>
+              <li><a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a></li>
+              <li><a href="oplossingen.html#retail" aria-current="page"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
+              <li><a href="oplossingen.html#zakelijke-dienstverlening" aria-current="page"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
             </ul>
           </li>
-          <li><a href="over.html">Over Aymere</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="over.html" data-i18n="nav.over">Over Aymere</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav__lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </li>
         </ul>
-        <div class="nav__cta"><a class="btn btn-primary" href="contact.html">Plan een kennismaking</a></div>
-        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+        <div class="nav__cta"><a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Plan een kennismaking</a></div>
+        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
         <div class="nav__drawer" id="mobile-nav">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
           <div class="nav__drawer-group" data-drawer-group>
             <button class="nav__drawer-toggle" type="button" aria-expanded="false" aria-controls="drawer-oplossingen" data-drawer-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="nav__drawer-submenu" id="drawer-oplossingen">
-              <a href="huisartspraktijken.html">Huisartspraktijken</a>
-              <a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a>
-              <a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a>
+              <a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a>
+              <a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
+              <a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
             </div>
           </div>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="nav__drawer-lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
         </div>
       </nav>
     </div>
@@ -69,13 +79,13 @@
       <div class="container">
         <div class="page-hero__grid">
           <div class="page-hero__main">
-            <p class="eyebrow">Oplossingen per sector</p>
-            <h1 class="h-display">Oplossingen voor uw sector.</h1>
-            <p class="lead">Data-uitdagingen verschillen per organisatie. Daarom vertalen we onze
+            <p class="eyebrow" data-i18n="oplossingen.eyebrow">Oplossingen per sector</p>
+            <h1 class="h-display" data-i18n="oplossingen.h1">Oplossingen voor uw sector.</h1>
+            <p class="lead" data-i18n="oplossingen.lead">Data-uitdagingen verschillen per organisatie. Daarom vertalen we onze
               expertise naar concrete oplossingen per sector.</p>
           </div>
           <aside class="page-hero__aside">
-            <p class="pull">Eén aanpak.<br>Toegepast per sector.</p>
+            <p class="pull" data-i18n="oplossingen.pull">Eén aanpak.<br>Toegepast per sector.</p>
           </aside>
         </div>
       </div>
@@ -87,23 +97,23 @@
           <article class="wwd-card">
             <span class="wwd-card__num">01</span>
             <span class="wwd-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="32" height="32"><path d="M8 3v6a4 4 0 0 0 8 0V3"/><circle cx="19" cy="14" r="2.4"/><path d="M12 11v3a5 5 0 0 0 5 5"/></svg></span>
-            <h3>Huisartspraktijken</h3>
-            <p class="wwd-card__body" style="margin-top:.5rem">Meer grip op zorgvraag, wachttijden, personeelsplanning en capaciteit.</p>
-            <a class="btn btn-outline" href="huisartspraktijken.html" style="margin-top:1.25rem">Bekijk oplossingen voor huisartspraktijken <span class="arrow">&rarr;</span></a>
+            <h3 data-i18n="nav.huisarts">Huisartspraktijken</h3>
+            <p class="wwd-card__body" style="margin-top:.5rem" data-i18n="oplossingen.item1.body">Meer grip op zorgvraag, wachttijden, personeelsplanning en capaciteit.</p>
+            <a class="btn btn-outline" href="huisartspraktijken.html" style="margin-top:1.25rem" data-i18n="oplossingen.item1.cta">Bekijk oplossingen voor huisartspraktijken <span class="arrow">&rarr;</span></a>
           </article>
           <article class="wwd-card" id="retail" style="scroll-margin-top:110px">
             <span class="wwd-card__num">02</span>
             <span class="wwd-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="32" height="32"><path d="M4 8h16l-1.3 11.2a2 2 0 0 1-2 1.8H7.3a2 2 0 0 1-2-1.8L4 8Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg></span>
-            <h3>Retail &amp; groothandel</h3>
-            <p class="wwd-card__body" style="margin-top:.5rem">Beter voorspellen van vraag, voorraad en commerciële prestaties.</p>
-            <span class="nav__soon" style="margin-top:1.25rem;display:inline-block">Binnenkort</span>
+            <h3 data-i18n="nav.retail">Retail &amp; groothandel</h3>
+            <p class="wwd-card__body" style="margin-top:.5rem" data-i18n="oplossingen.item2.body">Beter voorspellen van vraag, voorraad en commerciële prestaties.</p>
+            <span class="nav__soon" style="margin-top:1.25rem;display:inline-block" data-i18n="nav.soon">Binnenkort</span>
           </article>
           <article class="wwd-card" id="zakelijke-dienstverlening" style="scroll-margin-top:110px">
             <span class="wwd-card__num">03</span>
             <span class="wwd-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="32" height="32"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg></span>
-            <h3>Zakelijke dienstverlening</h3>
-            <p class="wwd-card__body" style="margin-top:.5rem">Meer grip op capaciteit, planning, productiviteit en toekomstige vraag.</p>
-            <span class="nav__soon" style="margin-top:1.25rem;display:inline-block">Binnenkort</span>
+            <h3 data-i18n="nav.zakelijk">Zakelijke dienstverlening</h3>
+            <p class="wwd-card__body" style="margin-top:.5rem" data-i18n="oplossingen.item3.body">Meer grip op capaciteit, planning, productiviteit en toekomstige vraag.</p>
+            <span class="nav__soon" style="margin-top:1.25rem;display:inline-block" data-i18n="nav.soon">Binnenkort</span>
           </article>
         </div>
       </div>
@@ -112,7 +122,7 @@
     <section class="section" style="padding-top:0">
       <div class="container">
         <div class="how-close">
-          <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
         </div>
       </div>
     </section>
@@ -131,24 +141,25 @@
             </svg>
             <span class="brand__word"><span class="brand__name" style="font-size:1.2rem">AYMERE</span></span>
           </a>
-          <p class="footer__desc">Data consultancy voor het Nederlandse mkb.</p>
+          <p class="footer__desc" data-i18n="footer.desc">Data consultancy voor het Nederlandse mkb.</p>
         </div>
         <nav class="footer__nav" aria-label="Footer">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
-          <a href="oplossingen.html">Oplossingen</a>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
+          <a href="oplossingen.html" data-i18n="nav.oplossingen">Oplossingen</a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="footer__meta">
           <a href="mailto:contact@aymere.nl">contact@aymere.nl</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Privacyverklaring</a>
+          <a href="#" data-i18n="footer.linkedin">LinkedIn</a>
+          <a href="#" data-i18n="footer.privacy">Privacyverklaring</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

@@ -629,3 +629,30 @@ body.page-dark { background: var(--navy-deep); }
 .on-dark .footer__meta a { color: var(--cream-soft); }
 .footer__meta a:hover { color: var(--copper); }
 .on-dark .footer__meta a:hover { color: var(--copper-light); }
+
+/* =====================================================================
+   LANGUAGE TOGGLE (NL / EN)
+   ===================================================================== */
+.nav__lang { display: flex; align-items: center; gap: .35rem; }
+.nav__lang button {
+  background: none; border: 0; padding: .2rem; margin: 0; font: inherit;
+  font-size: .72rem; letter-spacing: .1em; font-weight: 600; color: var(--ink-soft); cursor: pointer;
+}
+.on-dark .nav__lang button { color: var(--cream-soft); }
+.nav__lang button[aria-current="true"] { color: var(--copper); }
+.on-dark .nav__lang button[aria-current="true"] { color: var(--copper-light); }
+.nav__lang span { font-size: .72rem; color: var(--line); }
+.on-dark .nav__lang span { color: var(--line-dark); }
+
+.nav__drawer-lang { display: flex; align-items: center; gap: .5rem; padding: .85rem 0; border-bottom: 1px solid var(--line); }
+.on-dark .nav__drawer-lang { border-color: var(--line-dark); }
+.nav__drawer-lang button {
+  background: none; border: 0; padding: .3rem .2rem; margin: 0; font: inherit;
+  font-size: .78rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 600;
+  color: var(--ink-soft); cursor: pointer;
+}
+.on-dark .nav__drawer-lang button { color: var(--cream-soft); }
+.nav__drawer-lang button[aria-current="true"] { color: var(--copper); }
+.on-dark .nav__drawer-lang button[aria-current="true"] { color: var(--copper-light); }
+.nav__drawer-lang span { color: var(--line); }
+.on-dark .nav__drawer-lang span { color: var(--line-dark); }

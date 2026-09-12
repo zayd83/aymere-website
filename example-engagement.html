@@ -24,41 +24,51 @@
           <span class="brand__word"><span class="brand__name">AYMERE</span><span class="brand__sub">Data &amp; Intelligence</span></span>
         </a>
         <ul class="nav__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="diensten.html" data-i18n="nav.diensten">Diensten</a></li>
           <li class="nav__dropdown" data-dropdown>
             <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-oplossingen" data-dropdown-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <ul class="nav__dropdown-menu" id="dropdown-oplossingen">
-              <li><a href="huisartspraktijken.html">Huisartspraktijken</a></li>
-              <li><a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a></li>
-              <li><a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a></li>
+              <li><a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a></li>
+              <li><a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
+              <li><a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
             </ul>
           </li>
-          <li><a href="over.html">Over Aymere</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="over.html" data-i18n="nav.over">Over Aymere</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav__lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </li>
         </ul>
-        <div class="nav__cta"><a class="btn btn-primary" href="contact.html">Plan een kennismaking</a></div>
-        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+        <div class="nav__cta"><a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Plan een kennismaking</a></div>
+        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
         <div class="nav__drawer" id="mobile-nav">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
           <div class="nav__drawer-group" data-drawer-group>
             <button class="nav__drawer-toggle" type="button" aria-expanded="false" aria-controls="drawer-oplossingen" data-drawer-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="nav__drawer-submenu" id="drawer-oplossingen">
-              <a href="huisartspraktijken.html">Huisartspraktijken</a>
-              <a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a>
-              <a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a>
+              <a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a>
+              <a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
+              <a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
             </div>
           </div>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="nav__drawer-lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
         </div>
       </nav>
     </div>
@@ -69,12 +79,12 @@
       <div class="container">
         <div class="page-hero__grid">
           <div class="page-hero__main">
-            <p class="eyebrow eyebrow--dark">Illustrative engagement</p>
-            <h1 class="h-display">See how a business question<br><span class="accent">becomes a decision.</span></h1>
-            <p class="lead">One question. Multiple datasets. A clear direction.</p>
+            <p class="eyebrow eyebrow--dark" data-i18n="example.eyebrow">Illustrative engagement</p>
+            <h1 class="h-display" data-i18n="example.h1">See how a business question<br><span class="accent">becomes a decision.</span></h1>
+            <p class="lead" data-i18n="example.lead">One question. Multiple datasets. A clear direction.</p>
           </div>
           <aside class="page-hero__aside">
-            <p class="pull">Different data.<br>A deeper understanding.<br>A clearer tomorrow.</p>
+            <p class="pull" data-i18n="example.pull">Different data.<br>A deeper understanding.<br>A clearer tomorrow.</p>
           </aside>
         </div>
       </div>
@@ -85,44 +95,44 @@
         <div class="ex-grid">
           <div class="ex-narrative">
             <div class="ex-question">
-              <p class="eyebrow eyebrow--dark">The question</p>
-              <p class="ex-question__quote">&ldquo;Why is profitability declining<br>while revenue continues to grow?&rdquo;</p>
+              <p class="eyebrow eyebrow--dark" data-i18n="example.question.eyebrow">The question</p>
+              <p class="ex-question__quote" data-i18n="example.question.quote">&ldquo;Why is profitability declining<br>while revenue continues to grow?&rdquo;</p>
             </div>
 
             <ol class="ex-steps">
               <li class="ex-step">
                 <span class="ex-step__num">01</span>
                 <div>
-                  <h3>The situation</h3>
-                  <p>Revenue continues to grow, but margins are deteriorating. Management needs to understand what's driving the decline.</p>
+                  <h3 data-i18n="example.step1.title">The situation</h3>
+                  <p data-i18n="example.step1.body">Revenue continues to grow, but margins are deteriorating. Management needs to understand what's driving the decline.</p>
                 </div>
               </li>
               <li class="ex-step">
                 <span class="ex-step__num">02</span>
                 <div>
-                  <h3>The data</h3>
-                  <p>Sales &middot; Pricing &middot; Customer &middot; Product/service &middot; Operational cost &middot; Regional data</p>
+                  <h3 data-i18n="example.step2.title">The data</h3>
+                  <p data-i18n="example.step2.body">Sales &middot; Pricing &middot; Customer &middot; Product/service &middot; Operational cost &middot; Regional data</p>
                 </div>
               </li>
               <li class="ex-step">
                 <span class="ex-step__num">03</span>
                 <div>
-                  <h3>The analysis</h3>
-                  <p>AYMERE examines customer mix, pricing behaviour, product profitability, cost development and regional differences using statistical analysis and modelling.</p>
+                  <h3 data-i18n="example.step3.title">The analysis</h3>
+                  <p data-i18n="example.step3.body">AYMERE examines customer mix, pricing behaviour, product profitability, cost development and regional differences using statistical analysis and modelling.</p>
                 </div>
               </li>
               <li class="ex-step">
                 <span class="ex-step__num">04</span>
                 <div>
-                  <h3>The finding</h3>
-                  <p>The illustrative analysis reveals that growth is disproportionately coming from lower-margin segments while one operational cost category is increasing significantly.</p>
+                  <h3 data-i18n="example.step4.title">The finding</h3>
+                  <p data-i18n="example.step4.body">The illustrative analysis reveals that growth is disproportionately coming from lower-margin segments while one operational cost category is increasing significantly.</p>
                 </div>
               </li>
               <li class="ex-step">
                 <span class="ex-step__num">05</span>
                 <div>
-                  <h3>The decision</h3>
-                  <p>Management can now focus on repricing low-margin offerings, protecting profitable customer segments and addressing the identified cost driver.</p>
+                  <h3 data-i18n="example.step5.title">The decision</h3>
+                  <p data-i18n="example.step5.body">Management can now focus on repricing low-margin offerings, protecting profitable customer segments and addressing the identified cost driver.</p>
                 </div>
               </li>
             </ol>
@@ -130,35 +140,35 @@
 
           <div class="ex-charts">
             <div class="ex-panel">
-              <p class="ex-panel__title">Revenue and margin trend</p>
+              <p class="ex-panel__title" data-i18n="example.panel1">Revenue and margin trend</p>
               <div class="ex-chart-wrap"><canvas id="chart-trend"></canvas></div>
             </div>
 
             <div class="ex-charts__row">
               <div class="ex-panel">
-                <p class="ex-panel__title">Profitability by customer segment</p>
+                <p class="ex-panel__title" data-i18n="example.panel2">Profitability by customer segment</p>
                 <div class="ex-chart-wrap"><canvas id="chart-segment"></canvas></div>
               </div>
               <div class="ex-panel">
-                <p class="ex-panel__title">Operational cost drivers</p>
+                <p class="ex-panel__title" data-i18n="example.panel3">Operational cost drivers</p>
                 <div class="ex-donut-row">
                   <div class="ex-chart-wrap ex-chart-wrap--donut">
                     <canvas id="chart-cost"></canvas>
-                    <div class="ex-donut-center" aria-hidden="true">&euro; Cost<br>breakdown</div>
+                    <div class="ex-donut-center" aria-hidden="true" data-i18n="example.donut.center">&euro; Cost<br>breakdown</div>
                   </div>
                   <ul class="ex-legend">
-                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#d5a06a"></span>Personnel</span><span class="ex-legend__value">28%</span></li>
-                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#c1854f"></span>Logistics</span><span class="ex-legend__value">22%</span></li>
-                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#8a93a6"></span>Marketing</span><span class="ex-legend__value">18%</span></li>
-                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#cfc6b4"></span>IT &amp; Systems</span><span class="ex-legend__value">12%</span></li>
-                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#5b6b82"></span>Facilities</span><span class="ex-legend__value">10%</span></li>
-                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#3d4a60"></span>Other</span><span class="ex-legend__value">10%</span></li>
+                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#d5a06a"></span><span data-i18n="example.legend.personnel">Personnel</span></span><span class="ex-legend__value">28%</span></li>
+                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#c1854f"></span><span data-i18n="example.legend.logistics">Logistics</span></span><span class="ex-legend__value">22%</span></li>
+                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#8a93a6"></span><span data-i18n="example.legend.marketing">Marketing</span></span><span class="ex-legend__value">18%</span></li>
+                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#cfc6b4"></span><span data-i18n="example.legend.it">IT &amp; Systems</span></span><span class="ex-legend__value">12%</span></li>
+                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#5b6b82"></span><span data-i18n="example.legend.facilities">Facilities</span></span><span class="ex-legend__value">10%</span></li>
+                    <li class="ex-legend__row"><span class="ex-legend__label"><span class="ex-legend__dot" style="background:#3d4a60"></span><span data-i18n="example.legend.other">Other</span></span><span class="ex-legend__value">10%</span></li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <p class="ex-disclaimer">Example created to demonstrate AYMERE's analytical approach. It does not represent an actual client engagement. <span class="ex-disclaimer__tag">Illustrative engagement</span></p>
+            <p class="ex-disclaimer"><span data-i18n="example.disclaimer">Example created to demonstrate AYMERE's analytical approach. It does not represent an actual client engagement.</span> <span class="ex-disclaimer__tag" data-i18n="example.eyebrow">Illustrative engagement</span></p>
           </div>
         </div>
       </div>
@@ -167,8 +177,8 @@
     <section class="section" style="padding-top:0">
       <div class="container">
         <div class="ex-close">
-          <p class="ex-close__text">Your business will have a different question.<br><span class="accent">Our job is to find the evidence behind the answer.</span></p>
-          <a class="btn btn-outline" href="contact.html">Discuss your question <span class="arrow">&rarr;</span></a>
+          <p class="ex-close__text" data-i18n="example.close.text">Your business will have a different question.<br><span class="accent">Our job is to find the evidence behind the answer.</span></p>
+          <a class="btn btn-outline" href="contact.html" data-i18n="example.close.cta">Discuss your question <span class="arrow">&rarr;</span></a>
         </div>
       </div>
     </section>
@@ -187,25 +197,26 @@
             </svg>
             <span class="brand__word"><span class="brand__name" style="font-size:1.2rem">AYMERE</span></span>
           </a>
-          <p class="footer__desc">Data consultancy voor het Nederlandse mkb.</p>
+          <p class="footer__desc" data-i18n="footer.desc">Data consultancy voor het Nederlandse mkb.</p>
         </div>
         <nav class="footer__nav" aria-label="Footer">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
-          <a href="oplossingen.html">Oplossingen</a>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
+          <a href="oplossingen.html" data-i18n="nav.oplossingen">Oplossingen</a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="footer__meta">
           <a href="mailto:contact@aymere.nl">contact@aymere.nl</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Privacyverklaring</a>
+          <a href="#" data-i18n="footer.linkedin">LinkedIn</a>
+          <a href="#" data-i18n="footer.privacy">Privacyverklaring</a>
         </div>
       </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="i18n.js"></script>
   <script src="main.js"></script>
   <script>
   (function () {

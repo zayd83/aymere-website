@@ -33,44 +33,54 @@
         </a>
 
         <ul class="nav__links">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+          <li><a href="diensten.html" data-i18n="nav.diensten">Diensten</a></li>
           <li class="nav__dropdown" data-dropdown>
             <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-oplossingen" data-dropdown-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <ul class="nav__dropdown-menu" id="dropdown-oplossingen">
-              <li><a href="huisartspraktijken.html">Huisartspraktijken</a></li>
-              <li><a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a></li>
-              <li><a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a></li>
+              <li><a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a></li>
+              <li><a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
+              <li><a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
             </ul>
           </li>
-          <li><a href="over.html">Over Aymere</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="over.html" data-i18n="nav.over">Over Aymere</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav__lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </li>
         </ul>
-        <div class="nav__cta"><a class="btn btn-primary" href="contact.html">Plan een kennismaking</a></div>
+        <div class="nav__cta"><a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Plan een kennismaking</a></div>
 
-        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-nav">
+        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="mobile-nav">
           <span></span><span></span><span></span>
         </button>
         <div class="nav__drawer" id="mobile-nav">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
           <div class="nav__drawer-group" data-drawer-group>
             <button class="nav__drawer-toggle" type="button" aria-expanded="false" aria-controls="drawer-oplossingen" data-drawer-toggle>
-              Oplossingen
+              <span data-i18n="nav.oplossingen">Oplossingen</span>
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="nav__drawer-submenu" id="drawer-oplossingen">
-              <a href="huisartspraktijken.html">Huisartspraktijken</a>
-              <a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a>
-              <a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a>
+              <a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a>
+              <a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
+              <a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
             </div>
           </div>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="nav__drawer-lang" data-lang-toggle>
+            <button type="button" data-lang-option="nl">NL</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang-option="en">EN</button>
+          </div>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
         </div>
       </nav>
     </div>
@@ -85,16 +95,16 @@
             <p class="hero__brand-name">AYMERE</p>
             <p class="hero__brand-sub">Data &amp; Intelligence</p>
             <hr class="divider">
-            <h1>Aymere helpt mkb-bedrijven slimmer sturen met data<span class="dot">.</span></h1>
-            <p class="lead">Wij helpen organisaties beter voorspellen, plannen en optimaliseren met
+            <h1 data-i18n="home.hero.h1">Aymere helpt mkb-bedrijven slimmer sturen met data<span class="dot">.</span></h1>
+            <p class="lead" data-i18n="home.hero.sub">Wij helpen organisaties beter voorspellen, plannen en optimaliseren met
               dashboards, data-analyse en slimme modellen.</p>
             <div class="hero__actions">
-              <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
-              <a class="btn btn-outline" href="diensten.html">Bekijk onze diensten</a>
+              <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+              <a class="btn btn-outline" href="diensten.html" data-i18n="home.hero.cta2">Bekijk onze diensten</a>
             </div>
             <p class="tag hero__loc">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-              Amsterdam &nbsp;·&nbsp; Nederland
+              <span data-i18n="home.hero.loc">Amsterdam &nbsp;&middot;&nbsp; Nederland</span>
             </p>
           </div>
 
@@ -106,15 +116,15 @@
     <!-- ============ WAAR LOOPT U TEGENAAN ============ -->
     <section class="valuebar on-dark">
       <div class="container">
-        <h2 class="h-display">Waar loopt uw organisatie<br><span class="accent">tegenaan?</span></h2>
+        <h2 class="h-display" data-i18n="home.problems.title">Waar loopt uw organisatie<br><span class="accent">tegenaan?</span></h2>
         <div class="valuebar__grid" style="margin-top:2.5rem">
           <article class="value">
             <span class="value__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/></svg>
             </span>
             <div>
-              <h3>Te weinig inzicht</h3>
-              <p>Belangrijke informatie staat verspreid over verschillende systemen, Excel-bestanden en rapportages.</p>
+              <h3 data-i18n="home.problems.item1.title">Te weinig inzicht</h3>
+              <p data-i18n="home.problems.item1.body">Belangrijke informatie staat verspreid over verschillende systemen, Excel-bestanden en rapportages.</p>
             </div>
           </article>
           <article class="value">
@@ -122,8 +132,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M5 15l4-3 3 2 4-6"/><path d="M16 8l4-2" stroke-dasharray="2.2 2.2"/></svg>
             </span>
             <div>
-              <h3>Moeilijk vooruit plannen</h3>
-              <p>Het is lastig om te voorspellen hoeveel vraag, omzet, personeel of capaciteit binnenkort nodig is.</p>
+              <h3 data-i18n="home.problems.item2.title">Moeilijk vooruit plannen</h3>
+              <p data-i18n="home.problems.item2.body">Het is lastig om te voorspellen hoeveel vraag, omzet, personeel of capaciteit binnenkort nodig is.</p>
             </div>
           </article>
           <article class="value">
@@ -131,8 +141,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
             </span>
             <div>
-              <h3>Inefficiënte planning</h3>
-              <p>Personeel, tijd en middelen worden niet altijd ingezet op de momenten waarop ze het hardst nodig zijn.</p>
+              <h3 data-i18n="home.problems.item3.title">Inefficiënte planning</h3>
+              <p data-i18n="home.problems.item3.body">Personeel, tijd en middelen worden niet altijd ingezet op de momenten waarop ze het hardst nodig zijn.</p>
             </div>
           </article>
           <article class="value">
@@ -140,8 +150,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.6 2.6 0 0 1 5 1c0 1.6-2.5 1.8-2.5 3.6"/><circle cx="12" cy="17" r=".9" fill="currentColor" stroke="none"/></svg>
             </span>
             <div>
-              <h3>Beslissingen op gevoel</h3>
-              <p>Belangrijke keuzes worden gemaakt zonder duidelijk inzicht in de mogelijke gevolgen.</p>
+              <h3 data-i18n="home.problems.item4.title">Beslissingen op gevoel</h3>
+              <p data-i18n="home.problems.item4.body">Belangrijke keuzes worden gemaakt zonder duidelijk inzicht in de mogelijke gevolgen.</p>
             </div>
           </article>
         </div>
@@ -151,32 +161,32 @@
     <!-- ============ WAT WIJ DOEN ============ -->
     <section class="section">
       <div class="container">
-        <h2 class="h-display">Wat wij doen</h2>
+        <h2 class="h-display" data-i18n="home.what.title">Wat wij doen</h2>
         <div class="svc-grid" style="margin-top:2.5rem">
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1"/></svg></span>
-            <h3 class="svc__title">KPI-dashboards</h3>
-            <p class="svc__body">Alle belangrijke bedrijfsinformatie overzichtelijk op één plek.</p>
-            <p style="margin-top:.4rem;font-size:.8rem;letter-spacing:.03em;color:var(--copper)">Omzet &middot; Capaciteit &middot; Productiviteit &middot; Wachttijden &middot; Bezetting</p>
+            <h3 class="svc__title" data-i18n="home.what.item1.title">KPI-dashboards</h3>
+            <p class="svc__body" data-i18n="home.what.item1.body">Alle belangrijke bedrijfsinformatie overzichtelijk op één plek.</p>
+            <p style="margin-top:.4rem;font-size:.8rem;letter-spacing:.03em;color:var(--copper)" data-i18n="home.what.item1.list">Omzet &middot; Capaciteit &middot; Productiviteit &middot; Wachttijden &middot; Bezetting</p>
           </article>
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M5 16l4-3 3 2 4-6"/><path d="M16 9l4-2" stroke-dasharray="2.2 2.2"/></svg></span>
-            <h3 class="svc__title">Voorspellingen</h3>
-            <p class="svc__body">Gebruik historische data om vraag, omzet, drukte en benodigde capaciteit vooruit te voorspellen.</p>
+            <h3 class="svc__title" data-i18n="home.what.item2.title">Voorspellingen</h3>
+            <p class="svc__body" data-i18n="home.what.item2.body">Gebruik historische data om vraag, omzet, drukte en benodigde capaciteit vooruit te voorspellen.</p>
           </article>
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7h5M12 7h9M3 12h11M18 12h3M3 17h8M15 17h6"/><circle cx="9" cy="7" r="1.7" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="11.5" cy="17" r="1.7" fill="currentColor" stroke="none"/></svg></span>
-            <h3 class="svc__title">Planning &amp; optimalisatie</h3>
-            <p class="svc__body">Bereken hoe personeel, tijd, capaciteit en middelen het beste kunnen worden ingezet.</p>
+            <h3 class="svc__title" data-i18n="home.what.item3.title">Planning &amp; optimalisatie</h3>
+            <p class="svc__body" data-i18n="home.what.item3.body">Bereken hoe personeel, tijd, capaciteit en middelen het beste kunnen worden ingezet.</p>
           </article>
           <article class="svc" style="grid-column:1/-1">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M6 15l4-5 3 3 5-7"/><circle cx="18" cy="6" r="1.2" fill="currentColor" stroke="none"/></svg></span>
-            <h3 class="svc__title">Data-analyse</h3>
-            <p class="svc__body">Ontdek waar processen vastlopen, capaciteit verloren gaat en verbeterkansen liggen.</p>
+            <h3 class="svc__title" data-i18n="home.what.item4.title">Data-analyse</h3>
+            <p class="svc__body" data-i18n="home.what.item4.body">Ontdek waar processen vastlopen, capaciteit verloren gaat en verbeterkansen liggen.</p>
           </article>
         </div>
         <div style="text-align:center;margin-top:2.5rem">
-          <a class="btn btn-outline" href="diensten.html">Bekijk alle diensten <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-outline" href="diensten.html" data-i18n="home.what.cta">Bekijk alle diensten <span class="arrow">&rarr;</span></a>
         </div>
       </div>
     </section>
@@ -184,28 +194,28 @@
     <!-- ============ SECTOREN ============ -->
     <section class="section on-dark">
       <div class="container">
-        <h2 class="h-display">Oplossingen voor<br><span class="accent">verschillende sectoren</span></h2>
+        <h2 class="h-display" data-i18n="home.sectors.title">Oplossingen voor<br><span class="accent">verschillende sectoren</span></h2>
         <div class="wwd-grid" style="margin-top:2.5rem">
           <article class="wwd-card">
             <span class="wwd-card__num">01</span>
             <span class="wwd-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="32" height="32"><path d="M8 3v6a4 4 0 0 0 8 0V3"/><circle cx="19" cy="14" r="2.4"/><path d="M12 11v3a5 5 0 0 0 5 5"/></svg></span>
-            <h3>Huisartspraktijken</h3>
-            <p class="wwd-card__body" style="margin-top:.5rem">Meer grip op wachttijden, personeelsplanning, zorgvraag en beschikbare capaciteit.</p>
-            <a class="btn btn-outline" href="huisartspraktijken.html" style="margin-top:1.25rem">Bekijk oplossingen <span class="arrow">&rarr;</span></a>
+            <h3 data-i18n="nav.huisarts">Huisartspraktijken</h3>
+            <p class="wwd-card__body" style="margin-top:.5rem" data-i18n="home.sectors.item1.body">Meer grip op wachttijden, personeelsplanning, zorgvraag en beschikbare capaciteit.</p>
+            <a class="btn btn-outline" href="huisartspraktijken.html" style="margin-top:1.25rem" data-i18n="home.sectors.item1.cta">Bekijk oplossingen <span class="arrow">&rarr;</span></a>
           </article>
           <article class="wwd-card">
             <span class="wwd-card__num">02</span>
             <span class="wwd-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="32" height="32"><path d="M4 8h16l-1.3 11.2a2 2 0 0 1-2 1.8H7.3a2 2 0 0 1-2-1.8L4 8Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg></span>
-            <h3>Retail &amp; groothandel</h3>
-            <p class="wwd-card__body" style="margin-top:.5rem">Meer inzicht in vraag, voorraad, planning en commerciële prestaties.</p>
-            <span class="nav__soon" style="margin-top:1.25rem;display:inline-block">Binnenkort</span>
+            <h3 data-i18n="nav.retail">Retail &amp; groothandel</h3>
+            <p class="wwd-card__body" style="margin-top:.5rem" data-i18n="home.sectors.item2.body">Meer inzicht in vraag, voorraad, planning en commerciële prestaties.</p>
+            <span class="nav__soon" style="margin-top:1.25rem;display:inline-block" data-i18n="nav.soon">Binnenkort</span>
           </article>
           <article class="wwd-card">
             <span class="wwd-card__num">03</span>
             <span class="wwd-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="32" height="32"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg></span>
-            <h3>Zakelijke dienstverlening</h3>
-            <p class="wwd-card__body" style="margin-top:.5rem">Meer grip op capaciteit, personeelsinzet, productiviteit en forecasting.</p>
-            <span class="nav__soon" style="margin-top:1.25rem;display:inline-block">Binnenkort</span>
+            <h3 data-i18n="nav.zakelijk">Zakelijke dienstverlening</h3>
+            <p class="wwd-card__body" style="margin-top:.5rem" data-i18n="home.sectors.item3.body">Meer grip op capaciteit, personeelsinzet, productiviteit en forecasting.</p>
+            <span class="nav__soon" style="margin-top:1.25rem;display:inline-block" data-i18n="nav.soon">Binnenkort</span>
           </article>
         </div>
       </div>
@@ -214,31 +224,31 @@
     <!-- ============ VAN DATA NAAR VERBETERING ============ -->
     <section class="section">
       <div class="container">
-        <h2 class="h-display">Van data naar<br><span class="accent">concrete verbetering</span></h2>
+        <h2 class="h-display" data-i18n="home.timeline.title">Van data naar<br><span class="accent">concrete verbetering</span></h2>
         <ol class="timeline timeline--4" style="margin-top:2.5rem">
           <li class="tl-step">
             <span class="tl-step__num">01</span>
             <span class="tl-step__node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 5h16v11H9l-4 3v-3H4Z"/></svg></span>
-            <h3>Begrijpen</h3>
-            <p class="tl-step__body" style="margin-top:.4rem">We brengen het probleem, de bedrijfsprocessen en beschikbare data in kaart.</p>
+            <h3 data-i18n="home.timeline.step1.title">Begrijpen</h3>
+            <p class="tl-step__body" style="margin-top:.4rem" data-i18n="home.timeline.step1.body">We brengen het probleem, de bedrijfsprocessen en beschikbare data in kaart.</p>
           </li>
           <li class="tl-step">
             <span class="tl-step__num">02</span>
             <span class="tl-step__node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20V4M4 20h16"/><rect x="7" y="12" width="2.4" height="5"/><rect x="11.5" y="8" width="2.4" height="9"/><rect x="16" y="10" width="2.4" height="7"/></svg></span>
-            <h3>Analyseren &amp; bouwen</h3>
-            <p class="tl-step__body" style="margin-top:.4rem">We ontwikkelen het dashboard, de analyse, forecast of het optimalisatiemodel.</p>
+            <h3 data-i18n="home.timeline.step2.title">Analyseren &amp; bouwen</h3>
+            <p class="tl-step__body" style="margin-top:.4rem" data-i18n="home.timeline.step2.body">We ontwikkelen het dashboard, de analyse, forecast of het optimalisatiemodel.</p>
           </li>
           <li class="tl-step">
             <span class="tl-step__num">03</span>
             <span class="tl-step__node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.8"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></span>
-            <h3>Implementeren</h3>
-            <p class="tl-step__body" style="margin-top:.4rem">We zorgen dat de oplossing daadwerkelijk binnen de organisatie gebruikt kan worden.</p>
+            <h3 data-i18n="home.timeline.step3.title">Implementeren</h3>
+            <p class="tl-step__body" style="margin-top:.4rem" data-i18n="home.timeline.step3.body">We zorgen dat de oplossing daadwerkelijk binnen de organisatie gebruikt kan worden.</p>
           </li>
           <li class="tl-step">
             <span class="tl-step__num">04</span>
             <span class="tl-step__node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8M20 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 16M4 21v-5h5"/></svg></span>
-            <h3>Verbeteren</h3>
-            <p class="tl-step__body" style="margin-top:.4rem">We kunnen resultaten blijven monitoren en modellen periodiek actualiseren.</p>
+            <h3 data-i18n="home.timeline.step4.title">Verbeteren</h3>
+            <p class="tl-step__body" style="margin-top:.4rem" data-i18n="home.timeline.step4.body">We kunnen resultaten blijven monitoren en modellen periodiek actualiseren.</p>
           </li>
         </ol>
       </div>
@@ -247,14 +257,14 @@
     <!-- ============ EXPERTISE ============ -->
     <section class="section">
       <div class="container">
-        <h2 class="h-display">Sterk in<br><span class="accent">complexe beslissingen</span></h2>
-        <p class="lead" style="margin-top:1.4rem">Onze consultants combineren econometrie, operations
+        <h2 class="h-display" data-i18n="home.expertise.title">Sterk in<br><span class="accent">complexe beslissingen</span></h2>
+        <p class="lead" style="margin-top:1.4rem" data-i18n="home.expertise.body">Onze consultants combineren econometrie, operations
           research en data science. Hierdoor kunnen we niet alleen inzichtelijk maken wat er gebeurt,
           maar ook voorspellen wat eraan komt en berekenen welke keuze het beste resultaat oplevert.</p>
         <div style="display:flex;flex-wrap:wrap;gap:2rem;margin-top:2rem">
-          <span class="tag">Inzicht</span>
-          <span class="tag">Voorspellen</span>
-          <span class="tag">Optimaliseren</span>
+          <span class="tag" data-i18n="home.expertise.tag1">Inzicht</span>
+          <span class="tag" data-i18n="home.expertise.tag2">Voorspellen</span>
+          <span class="tag" data-i18n="home.expertise.tag3">Optimaliseren</span>
         </div>
       </div>
     </section>
@@ -262,9 +272,9 @@
     <!-- ============ CTA ============ -->
     <section class="section on-dark">
       <div class="container" style="text-align:center">
-        <h2 class="h-display">Benieuwd wat data voor uw organisatie<br><span class="accent">kan betekenen?</span></h2>
-        <p class="lead" style="margin:1.25rem auto 2rem">Bespreek vrijblijvend waar u momenteel tegenaan loopt.</p>
-        <a class="btn btn-primary" href="contact.html">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+        <h2 class="h-display" data-i18n="home.cta.title">Benieuwd wat data voor uw organisatie<br><span class="accent">kan betekenen?</span></h2>
+        <p class="lead" style="margin:1.25rem auto 2rem" data-i18n="home.cta.body">Bespreek vrijblijvend waar u momenteel tegenaan loopt.</p>
+        <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
       </div>
     </section>
   </main>
@@ -282,24 +292,25 @@
             </svg>
             <span class="brand__word"><span class="brand__name" style="font-size:1.2rem">AYMERE</span></span>
           </a>
-          <p class="footer__desc">Data consultancy voor het Nederlandse mkb.</p>
+          <p class="footer__desc" data-i18n="footer.desc">Data consultancy voor het Nederlandse mkb.</p>
         </div>
         <nav class="footer__nav" aria-label="Footer">
-          <a href="index.html">Home</a>
-          <a href="diensten.html">Diensten</a>
-          <a href="oplossingen.html">Oplossingen</a>
-          <a href="over.html">Over Aymere</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
+          <a href="oplossingen.html" data-i18n="nav.oplossingen">Oplossingen</a>
+          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="footer__meta">
           <a href="mailto:contact@aymere.nl">contact@aymere.nl</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Privacyverklaring</a>
+          <a href="#" data-i18n="footer.linkedin">LinkedIn</a>
+          <a href="#" data-i18n="footer.privacy">Privacyverklaring</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
