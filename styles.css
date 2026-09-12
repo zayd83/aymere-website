@@ -311,6 +311,8 @@ body.page-dark { background: var(--navy-deep); }
   background: var(--line); border: 1px solid var(--line); }
 @media (min-width: 640px)  { .svc-grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1040px) { .svc-grid { grid-template-columns: repeat(3, 1fr); } }
+/* modifier: let a trailing odd card (e.g. 5th of 5) fill the remaining row instead of leaving an empty track */
+@media (min-width: 640px)  { .svc--span2 { grid-column: span 2; } }
 .svc { background: var(--cream); padding: clamp(1.6rem, 2.4vw, 2.3rem);
   display: flex; flex-direction: column; gap: .75rem; }
 .svc__icon { color: var(--copper); width: 32px; height: 32px; margin-bottom: .3rem; }
