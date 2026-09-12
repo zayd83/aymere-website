@@ -395,6 +395,8 @@ body.page-dark { background: var(--navy-deep); }
   background: var(--line-dark); border: 1px solid var(--line-dark); }
 @media (min-width: 640px) { .principles { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 980px) { .principles { grid-template-columns: repeat(4, 1fr); } }
+/* modifier: let a trailing odd card fill the remaining row instead of leaving an empty track */
+@media (min-width: 640px) { .principle--span2 { grid-column: span 2; } }
 .principle { background: var(--navy-deep); padding: clamp(1.5rem, 2.2vw, 2.1rem); }
 .principle__icon { width: 46px; height: 46px; border: 1px solid var(--line-dark); border-radius: 50%;
   display: grid; place-items: center; color: var(--copper-light); margin-bottom: 1.3rem; }

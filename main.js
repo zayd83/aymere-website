@@ -25,7 +25,7 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var note = form.querySelector('[data-form-note]');
-      if (note) { note.textContent = 'Thanks — your question has been noted. We\u2019ll be in touch. (This form is not yet connected; wire it to email or a service before launch.)'; }
+      if (note) { note.textContent = 'Bedankt — uw bericht is genoteerd. We nemen contact met u op. (Dit formulier is nog niet gekoppeld; sluit het aan op e-mail of een service voor livegang.)'; }
       form.reset();
     });
   }
