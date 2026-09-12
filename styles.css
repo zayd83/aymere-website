@@ -369,6 +369,8 @@ body.page-dark { background: var(--navy-deep); }
   .timeline { grid-template-columns: repeat(6, 1fr); gap: 1.4rem; }
   .timeline::before { content: ""; position: absolute; left: 27px; right: 27px;
     top: calc(1.6rem + 27px); height: 1px; background: var(--copper); opacity: .45; }
+  /* modifier: a 4-step timeline (e.g. home page) instead of the default 6 */
+  .timeline--4 { grid-template-columns: repeat(4, 1fr); }
 }
 .how-close { text-align: center; border-top: 1px solid var(--line);
   margin-top: clamp(2.5rem,5vw,4rem); padding-top: clamp(2.5rem,5vw,4rem); }
