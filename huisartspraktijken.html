@@ -3,37 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AYMERE — Turn complexity into clarity</title>
-  <meta name="description" content="AYMERE is an Amsterdam-based data and intelligence firm. We help organisations understand their data and make better-informed decisions.">
+  <title>Huisartspraktijken — AYMERE Data &amp; Intelligence</title>
+  <meta name="description" content="Data- en intelligence-oplossingen van AYMERE voor huisartspraktijken.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..700&family=Lora:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- ============ HEADER (shared) ============ -->
-  <!-- To use the real logo file, replace the <svg class="brand__mark"> block with:
-       <img class="brand__mark" src="assets/logo.svg" alt=""> -->
   <header class="site-header" data-header>
     <div class="container">
       <nav class="nav" data-nav>
         <a class="brand" href="index.html" aria-label="AYMERE — home">
           <svg class="brand__mark" viewBox="0 0 64 74" aria-hidden="true">
             <path class="a-shape" fill-rule="evenodd" d="M32 6 L57 64 L7 64 Z M32 28 L46 58 L18 58 Z"/>
-            <rect class="a-shape" x="4" y="60" width="13" height="4"/>
-            <rect class="a-shape" x="47" y="60" width="13" height="4"/>
+            <rect class="a-shape" x="4" y="60" width="13" height="4"/><rect class="a-shape" x="47" y="60" width="13" height="4"/>
             <path class="a-arc" d="M19 44 Q32 35 45 43" fill="none" stroke-width="2.4" stroke-linecap="round"/>
             <path class="a-sun" d="M24.5 43 A7 7 0 0 1 38.5 43 Z"/>
           </svg>
-          <span class="brand__word">
-            <span class="brand__name">AYMERE</span>
-            <span class="brand__sub">Data &amp; Intelligence</span>
-          </span>
+          <span class="brand__word"><span class="brand__name">AYMERE</span><span class="brand__sub">Data &amp; Intelligence</span></span>
         </a>
-
         <ul class="nav__links">
-          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="diensten.html">Diensten</a></li>
           <li class="nav__dropdown" data-dropdown>
             <button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-oplossingen" data-dropdown-toggle>
@@ -41,7 +32,7 @@
               <svg class="nav__dropdown-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <ul class="nav__dropdown-menu" id="dropdown-oplossingen">
-              <li><a href="huisartspraktijken.html">Huisartspraktijken</a></li>
+              <li><a href="huisartspraktijken.html" aria-current="page">Huisartspraktijken</a></li>
               <li><a href="oplossingen.html#retail">Retail &amp; groothandel <span class="nav__soon">Binnenkort</span></a></li>
               <li><a href="oplossingen.html#zakelijke-dienstverlening">Zakelijke dienstverlening <span class="nav__soon">Binnenkort</span></a></li>
             </ul>
@@ -50,10 +41,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="nav__cta"><a class="btn btn-primary" href="contact.html">Plan een kennismaking</a></div>
-
-        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-nav">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
         <div class="nav__drawer" id="mobile-nav">
           <a href="index.html">Home</a>
           <a href="diensten.html">Diensten</a>
@@ -77,76 +65,7 @@
   </header>
 
   <main>
-    <!-- ============ HERO ============ -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero__grid">
-          <div class="hero__content">
-            <p class="hero__brand-name">AYMERE</p>
-            <p class="hero__brand-sub">Data &amp; Intelligence</p>
-            <hr class="divider">
-            <h1>Turn complexity<br>into clarity<span class="dot">.</span></h1>
-            <p class="lead">We help organisations understand their data, uncover what drives
-              performance and make better-informed decisions.</p>
-            <div class="hero__actions">
-              <a class="btn btn-primary" href="diensten.html">Explore our capabilities <span class="arrow">&rarr;</span></a>
-              <a class="btn btn-outline" href="contact.html">Discuss a question</a>
-            </div>
-            <p class="tag hero__loc">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-              Amsterdam &nbsp;·&nbsp; The Netherlands
-            </p>
-          </div>
-
-          <!-- Swap .canal for the real photo: style="background:url('assets/canal-hero.jpg') center/cover" -->
-          <div class="hero__visual canal" role="img" aria-label="Amsterdam canal at golden hour"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ VALUE STRIP ============ -->
-    <section class="valuebar">
-      <div class="container">
-        <div class="valuebar__grid">
-          <article class="value">
-            <span class="value__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3"/></svg>
-            </span>
-            <div>
-              <h3>Data, analysed</h3>
-              <p>Rigorous analysis and quantitative depth.</p>
-            </div>
-          </article>
-          <article class="value">
-            <span class="value__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M6 15l4-5 3 3 5-7"/><circle cx="18" cy="6" r="1.2" fill="currentColor" stroke="none"/></svg>
-            </span>
-            <div>
-              <h3>Insights, relevant</h3>
-              <p>Turning data into insights that drive decisions.</p>
-            </div>
-          </article>
-          <article class="value">
-            <span class="value__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20h16M5 20V9m5 11V9m4 11V9m5 11V9M12 3 3 8h18Z"/></svg>
-            </span>
-            <div>
-              <h3>Decisions, confident</h3>
-              <p>Clarity for leaders. Impact for the business.</p>
-            </div>
-          </article>
-          <article class="value">
-            <span class="value__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8.5" cy="9" r="3"/><path d="M3 20c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><circle cx="17" cy="10" r="2.4"/><path d="M15 20c0-2.4 1.4-4 3.5-4S22 17.6 22 20"/></svg>
-            </span>
-            <div>
-              <h3>Partners, close</h3>
-              <p>We stay close to the question and the people who ask it.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+    <p style="padding:4rem var(--gutter)">Wordt ingevuld</p>
   </main>
 
   <footer class="site-footer">

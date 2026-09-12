@@ -37,4 +37,50 @@
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
   }
+
+  // "Oplossingen" dropdown (desktop: click-toggle, CSS handles hover)
+  var dropdowns = document.querySelectorAll('[data-dropdown]');
+  dropdowns.forEach(function (dropdown) {
+    var dToggle = dropdown.querySelector('[data-dropdown-toggle]');
+    if (!dToggle) return;
+    dToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = dropdown.getAttribute('data-open') === 'true';
+      dropdowns.forEach(function (d) {
+        d.setAttribute('data-open', 'false');
+        var t = d.querySelector('[data-dropdown-toggle]');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+      dropdown.setAttribute('data-open', String(!open));
+      dToggle.setAttribute('aria-expanded', String(!open));
+    });
+  });
+  document.addEventListener('click', function (e) {
+    dropdowns.forEach(function (dropdown) {
+      if (dropdown.getAttribute('data-open') === 'true' && !dropdown.contains(e.target)) {
+        dropdown.setAttribute('data-open', 'false');
+        var t = dropdown.querySelector('[data-dropdown-toggle]');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    dropdowns.forEach(function (dropdown) {
+      dropdown.setAttribute('data-open', 'false');
+      var t = dropdown.querySelector('[data-dropdown-toggle]');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Mobile drawer accordion (Oplossingen group)
+  document.querySelectorAll('[data-drawer-group]').forEach(function (group) {
+    var gToggle = group.querySelector('[data-drawer-toggle]');
+    if (!gToggle) return;
+    gToggle.addEventListener('click', function () {
+      var open = group.getAttribute('data-open') === 'true';
+      group.setAttribute('data-open', String(!open));
+      gToggle.setAttribute('aria-expanded', String(!open));
+    });
+  });
 })();
