@@ -241,7 +241,11 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.25rem; }
 .hero__loc { margin-top: 2.5rem; }
 
-.hero__visual { min-height: 300px; }
+.hero__visual { min-height: 300px; position: relative; }
+.hero__visual::before {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, var(--cream) 0%, rgba(244,238,226,0) 30%);
+}
 .hero__content { position: relative; z-index: 2; }
 @media (min-width: 900px) {
   .hero { min-height: 660px; display: flex; align-items: center; }
@@ -250,9 +254,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
   /* full-bleed: photo pinned to the right viewport edge */
   .hero__visual { position: absolute; inset: 0 0 0 auto; width: 53vw; min-height: 0; z-index: 0; }
   .hero__visual::before {
-    content: ""; position: absolute; inset: 0;
     background: linear-gradient(101deg, var(--cream) 3%, rgba(244,238,226,0) 42%);
-    z-index: 1; pointer-events: none;
   }
 }
 
@@ -387,7 +389,13 @@ body.page-dark { background: var(--navy-deep); }
 .about-intro__lede { font-family: var(--font-display); font-size: clamp(1.1rem,1.7vw,1.35rem);
   color: var(--copper-light); font-style: italic; margin-bottom: 1.5rem; }
 .about-intro p + p { margin-top: 1.1rem; }
-.about-intro__photo { min-height: 320px; }
+.about-intro__photo { min-height: 320px; overflow: hidden; }
+.about-intro__photo::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(180deg, var(--navy-deep), rgba(16,31,54,0) 14%, rgba(16,31,54,0) 86%, var(--navy-deep)),
+    linear-gradient(90deg, var(--navy-deep), rgba(16,31,54,0) 14%, rgba(16,31,54,0) 86%, var(--navy-deep));
+}
 @media (min-width: 900px) {
   .about-intro { grid-template-columns: 1.25fr 1fr; align-items: center; gap: 3rem; }
 }
@@ -453,6 +461,11 @@ body.page-dark { background: var(--navy-deep); }
 .contact-photo::before {
   content: ""; position: absolute; top: 0; left: 0; right: 0; height: 16%;
   background: linear-gradient(180deg, var(--cream), rgba(244,238,226,0));
+  pointer-events: none;
+}
+.contact-photo::after {
+  content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 16%;
+  background: linear-gradient(0deg, var(--cream), rgba(244,238,226,0));
   pointer-events: none;
 }
 
