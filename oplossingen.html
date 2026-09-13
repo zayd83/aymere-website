@@ -128,9 +128,9 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer on-dark">
     <div class="container">
-      <div class="footer__row">
+      <div class="footer__cols">
         <div class="footer__brand">
           <a class="brand" href="index.html" aria-label="AYMERE — home">
             <svg class="brand__mark" viewBox="0 0 64 74" aria-hidden="true">
@@ -143,17 +143,36 @@
           </a>
           <p class="footer__desc" data-i18n="footer.desc">Data consultancy voor het Nederlandse mkb.</p>
         </div>
-        <nav class="footer__nav" aria-label="Footer">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <a href="diensten.html" data-i18n="nav.diensten">Diensten</a>
-          <a href="oplossingen.html" data-i18n="nav.oplossingen">Oplossingen</a>
-          <a href="over.html" data-i18n="nav.over">Over Aymere</a>
-          <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        </nav>
-        <div class="footer__meta">
-          <a href="mailto:contact@aymere.nl">contact@aymere.nl</a>
-          <a href="#" data-i18n="footer.linkedin">LinkedIn</a>
-          <a href="#" data-i18n="footer.privacy">Privacyverklaring</a>
+        <div class="footer__col">
+          <h3 data-i18n="footer.nav.heading">Navigatie</h3>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="diensten.html" data-i18n="nav.diensten">Diensten</a></li>
+            <li><a href="oplossingen.html" data-i18n="nav.oplossingen">Oplossingen</a></li>
+            <li><a href="over.html" data-i18n="nav.over">Over Aymere</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 data-i18n="footer.contact.heading">Contact</h3>
+          <ul>
+            <li><a href="mailto:contact@aymere.nl">contact@aymere.nl</a></li>
+            <li><a href="#" data-i18n="footer.linkedin">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 data-i18n="footer.legal.heading">Juridisch</h3>
+          <ul>
+            <li><a href="#" data-i18n="footer.privacy">Privacyverklaring</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright" data-i18n="footer.copyright">&copy; 2026 Aymere. Alle rechten voorbehouden.</p>
+        <div class="nav__lang" data-lang-toggle>
+          <button type="button" data-lang-option="nl">NL</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-lang-option="en">EN</button>
         </div>
       </div>
     </div>

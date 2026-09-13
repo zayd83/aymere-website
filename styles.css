@@ -161,7 +161,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
   color: var(--copper); margin-top: .28rem; }
 .on-dark .brand__sub { color: var(--copper-light); }
 
-.nav__links { display: none; align-items: center; gap: clamp(1rem, 2.4vw, 2.4rem); }
+.nav__links { display: none; align-items: center; gap: clamp(.85rem, 1.8vw, 1.75rem); white-space: nowrap; }
 .nav__links a {
   font-size: .76rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 600;
   color: var(--navy); padding-block: .4rem; position: relative;
@@ -210,11 +210,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 }
 
 /* ---- Footer -------------------------------------------------------- */
-.site-footer { background: var(--cream); border-top: 1px solid var(--line); padding-block: clamp(2.25rem, 4vw, 3rem); }
-.site-footer.on-dark { background: var(--navy-deep); border-color: var(--line-dark); }
-.footer__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; }
-.footer__tag { font-style: italic; color: var(--copper); }
-.on-dark .footer__tag { color: var(--copper-light); }
+.site-footer { background: var(--navy-deep); color: var(--cream-soft); padding-block: clamp(3rem, 6vw, 4.5rem) 0; }
 
 /* ---- Canal visual (real photos) ------------------------------------ */
 .canal {
@@ -614,21 +610,25 @@ body.page-dark { background: var(--navy-deep); }
 }
 
 /* =====================================================================
-   FOOTER — brand block + meta links (Dutch shared footer)
+   FOOTER — dark, multi-column (deliberately distinct from the header)
    ===================================================================== */
-.footer__brand { display: flex; flex-direction: column; gap: .6rem; max-width: 280px; }
-.footer__desc { font-size: .88rem; color: var(--ink-soft); }
-.on-dark .footer__desc { color: var(--cream-soft); }
-.footer__nav { display: flex; flex-wrap: wrap; gap: 1.4rem; }
-.footer__nav a { font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 600; color: var(--ink-soft); }
-.on-dark .footer__nav a { color: var(--cream-soft); }
-.footer__nav a:hover { color: var(--copper); }
-.on-dark .footer__nav a:hover { color: var(--copper-light); }
-.footer__meta { display: flex; flex-wrap: wrap; gap: 1.4rem; }
-.footer__meta a { font-size: .72rem; letter-spacing: .1em; color: var(--ink-soft); }
-.on-dark .footer__meta a { color: var(--cream-soft); }
-.footer__meta a:hover { color: var(--copper); }
-.on-dark .footer__meta a:hover { color: var(--copper-light); }
+.footer__cols { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 2.5rem;
+  padding-bottom: clamp(2.5rem, 5vw, 3.5rem); }
+@media (max-width: 900px) { .footer__cols { grid-template-columns: 1fr 1fr; row-gap: 2.5rem; } }
+@media (max-width: 560px) { .footer__cols { grid-template-columns: 1fr; } }
+
+.footer__brand { display: flex; flex-direction: column; gap: .9rem; max-width: 280px; }
+.footer__desc { font-size: .88rem; color: var(--cream-soft); }
+
+.footer__col h3 { font-family: var(--font-body); font-weight: 700; font-size: .72rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--copper-light); margin-bottom: 1.1rem; }
+.footer__col ul { display: grid; gap: .65rem; }
+.footer__col a { font-size: .88rem; color: var(--cream-soft); }
+.footer__col a:hover { color: var(--copper-light); }
+
+.footer__bottom { border-top: 1px solid var(--line-dark); padding-block: 1.5rem;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+.footer__copyright { font-size: .78rem; color: var(--cream-soft); }
 
 /* =====================================================================
    LANGUAGE TOGGLE (NL / EN)

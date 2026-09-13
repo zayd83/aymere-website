@@ -19,8 +19,12 @@ var AYMERE_I18N_NL = {
   'nav.soon': `Binnenkort`,
   'nav.toggle': `Menu openen`,
   'footer.desc': `Data consultancy voor het Nederlandse mkb.`,
+  'footer.nav.heading': `Navigatie`,
+  'footer.contact.heading': `Contact`,
+  'footer.legal.heading': `Juridisch`,
   'footer.linkedin': `LinkedIn`,
   'footer.privacy': `Privacyverklaring`,
+  'footer.copyright': `&copy; 2026 Aymere. Alle rechten voorbehouden.`,
   'cta.plan': `Plan een kennismaking <span class="arrow">&rarr;</span>`,
 
   // ---- Home (index.html) ----
@@ -192,36 +196,6 @@ var AYMERE_I18N_NL = {
   'contact.form.direct': `Plan direct een kennismaking`,
   'contact.form.note': `Bedankt — uw bericht is genoteerd. We nemen contact met u op. (Dit formulier is nog niet gekoppeld; sluit het aan op e-mail of een service voor livegang.)`,
 
-  // ---- Example engagement (illustrative demo page) ----
-  'example.eyebrow': `Voorbeeldcasus`,
-  'example.h1': `Zie hoe een zakelijke vraag<br><span class="accent">een beslissing wordt.</span>`,
-  'example.lead': `Eén vraag. Meerdere datasets. Een duidelijke richting.`,
-  'example.pull': `Andere data.<br>Een dieper inzicht.<br>Een helderder morgen.`,
-  'example.question.eyebrow': `De vraag`,
-  'example.question.quote': `&ldquo;Waarom daalt de winstgevendheid<br>terwijl de omzet blijft groeien?&rdquo;`,
-  'example.step1.title': `De situatie`,
-  'example.step1.body': `De omzet blijft groeien, maar de marges verslechteren. Het management wil begrijpen wat de daling veroorzaakt.`,
-  'example.step2.title': `De data`,
-  'example.step2.body': `Verkoop &middot; Prijsstelling &middot; Klant &middot; Product/dienst &middot; Operationele kosten &middot; Regionale data`,
-  'example.step3.title': `De analyse`,
-  'example.step3.body': `Aymere onderzoekt klantmix, prijsgedrag, productwinstgevendheid, kostenontwikkeling en regionale verschillen met statistische analyse en modellering.`,
-  'example.step4.title': `De bevinding`,
-  'example.step4.body': `De illustratieve analyse laat zien dat de groei onevenredig uit lagere-marge-segmenten komt, terwijl één kostenpost sterk toeneemt.`,
-  'example.step5.title': `De beslissing`,
-  'example.step5.body': `Het management kan zich nu richten op het herprijzen van laagmarge-aanbod, het beschermen van winstgevende klantsegmenten en het aanpakken van de gevonden kostenpost.`,
-  'example.panel1': `Omzet- en margetrend`,
-  'example.panel2': `Winstgevendheid per klantsegment`,
-  'example.panel3': `Operationele kostenposten`,
-  'example.donut.center': `&euro; Kosten-<br>verdeling`,
-  'example.legend.personnel': `Personeel`,
-  'example.legend.logistics': `Logistiek`,
-  'example.legend.marketing': `Marketing`,
-  'example.legend.it': `IT &amp; systemen`,
-  'example.legend.facilities': `Faciliteiten`,
-  'example.legend.other': `Overig`,
-  'example.disclaimer': `Dit voorbeeld is gemaakt om de analytische aanpak van Aymere te laten zien. Het betreft geen daadwerkelijke klantopdracht.`,
-  'example.close.text': `Uw organisatie heeft een andere vraag.<br><span class="accent">Wij vinden het bewijs achter het antwoord.</span>`,
-  'example.close.cta': `Bespreek uw vraag <span class="arrow">&rarr;</span>`
 };
 
 var AYMERE_I18N_EN = {
@@ -238,8 +212,12 @@ var AYMERE_I18N_EN = {
   'nav.soon': `Coming soon`,
   'nav.toggle': `Open menu`,
   'footer.desc': `Data consultancy for Dutch SMEs.`,
+  'footer.nav.heading': `Navigation`,
+  'footer.contact.heading': `Contact`,
+  'footer.legal.heading': `Legal`,
   'footer.linkedin': `LinkedIn`,
   'footer.privacy': `Privacy policy`,
+  'footer.copyright': `&copy; 2026 Aymere. All rights reserved.`,
   'cta.plan': `Book an introduction <span class="arrow">&rarr;</span>`,
 
   // ---- Home (index.html) ----
@@ -411,36 +389,6 @@ var AYMERE_I18N_EN = {
   'contact.form.direct': `Book an introduction directly`,
   'contact.form.note': `Thanks — your message has been noted. We'll be in touch. (This form isn't connected yet; wire it up to email or a service before launch.)`,
 
-  // ---- Example engagement (illustrative demo page) ----
-  'example.eyebrow': `Illustrative engagement`,
-  'example.h1': `See how a business question<br><span class="accent">becomes a decision.</span>`,
-  'example.lead': `One question. Multiple datasets. A clear direction.`,
-  'example.pull': `Different data.<br>A deeper understanding.<br>A clearer tomorrow.`,
-  'example.question.eyebrow': `The question`,
-  'example.question.quote': `&ldquo;Why is profitability declining<br>while revenue continues to grow?&rdquo;`,
-  'example.step1.title': `The situation`,
-  'example.step1.body': `Revenue continues to grow, but margins are deteriorating. Management needs to understand what's driving the decline.`,
-  'example.step2.title': `The data`,
-  'example.step2.body': `Sales &middot; Pricing &middot; Customer &middot; Product/service &middot; Operational cost &middot; Regional data`,
-  'example.step3.title': `The analysis`,
-  'example.step3.body': `Aymere examines customer mix, pricing behaviour, product profitability, cost development and regional differences using statistical analysis and modelling.`,
-  'example.step4.title': `The finding`,
-  'example.step4.body': `The illustrative analysis reveals that growth is disproportionately coming from lower-margin segments while one operational cost category is increasing significantly.`,
-  'example.step5.title': `The decision`,
-  'example.step5.body': `Management can now focus on repricing low-margin offerings, protecting profitable customer segments and addressing the identified cost driver.`,
-  'example.panel1': `Revenue and margin trend`,
-  'example.panel2': `Profitability by customer segment`,
-  'example.panel3': `Operational cost drivers`,
-  'example.donut.center': `&euro; Cost<br>breakdown`,
-  'example.legend.personnel': `Personnel`,
-  'example.legend.logistics': `Logistics`,
-  'example.legend.marketing': `Marketing`,
-  'example.legend.it': `IT &amp; Systems`,
-  'example.legend.facilities': `Facilities`,
-  'example.legend.other': `Other`,
-  'example.disclaimer': `Example created to demonstrate Aymere's analytical approach. It does not represent an actual client engagement.`,
-  'example.close.text': `Your business will have a different question.<br><span class="accent">Our job is to find the evidence behind the answer.</span>`,
-  'example.close.cta': `Discuss your question <span class="arrow">&rarr;</span>`
 };
 
 (function () {
