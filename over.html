@@ -33,10 +33,10 @@
             </button>
             <ul class="nav__dropdown-menu" id="dropdown-oplossingen">
               <li><a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a></li>
-              <li><a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
-              <li><a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a></li>
+              <li><a href="oplossingen.html#andere-organisaties" data-i18n="nav.andere">Andere organisaties</a></li>
             </ul>
           </li>
+          <li><a href="werkwijze.html" data-i18n="nav.werkwijze">Werkwijze</a></li>
           <li><a href="over.html" aria-current="page" data-i18n="nav.over">Over Aymere</a></li>
           <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
           <li class="nav__lang" data-lang-toggle>
@@ -45,7 +45,7 @@
             <button type="button" data-lang-option="en">EN</button>
           </li>
         </ul>
-        <div class="nav__cta"><a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Plan een kennismaking</a></div>
+        <div class="nav__cta"><a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Bespreek uw vraagstuk <span class="arrow">&rarr;</span></a></div>
         <button class="nav__toggle" data-nav-toggle aria-label="Menu openen" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
         <div class="nav__drawer" id="mobile-nav">
           <a href="index.html" data-i18n="nav.home">Home</a>
@@ -57,10 +57,10 @@
             </button>
             <div class="nav__drawer-submenu" id="drawer-oplossingen">
               <a href="huisartspraktijken.html" data-i18n="nav.huisarts">Huisartspraktijken</a>
-              <a href="oplossingen.html#retail"><span data-i18n="nav.retail">Retail &amp; groothandel</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
-              <a href="oplossingen.html#zakelijke-dienstverlening"><span data-i18n="nav.zakelijk">Zakelijke dienstverlening</span> <span class="nav__soon" data-i18n="nav.soon">Binnenkort</span></a>
+              <a href="oplossingen.html#andere-organisaties" data-i18n="nav.andere">Andere organisaties</a>
             </div>
           </div>
+          <a href="werkwijze.html" data-i18n="nav.werkwijze">Werkwijze</a>
           <a href="over.html" data-i18n="nav.over">Over Aymere</a>
           <a href="contact.html" data-i18n="nav.contact">Contact</a>
           <div class="nav__drawer-lang" data-lang-toggle>
@@ -68,7 +68,7 @@
             <span aria-hidden="true">/</span>
             <button type="button" data-lang-option="en">EN</button>
           </div>
-          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Bespreek uw vraagstuk <span class="arrow">&rarr;</span></a>
         </div>
       </nav>
     </div>
@@ -163,9 +163,9 @@
               <path class="a-arc" d="M19 44 Q32 35 45 43" fill="none" stroke-width="2.4" stroke-linecap="round"/>
               <path class="a-sun" d="M24.5 43 A7 7 0 0 1 38.5 43 Z"/>
             </svg>
-            <span class="brand__word"><span class="brand__name" style="font-size:1.2rem">AYMERE</span></span>
+            <span class="brand__word"><span class="brand__name" style="font-size:1.2rem">AYMERE</span><span class="brand__sub">Data &amp; Intelligence</span></span>
           </a>
-          <p class="footer__desc" data-i18n="footer.desc">Data consultancy voor het Nederlandse mkb.</p>
+          <p class="footer__desc" data-i18n="footer.desc">Data-analyse, forecasting en optimalisatie voor complexe operationele beslissingen.</p>
         </div>
         <div class="footer__col">
           <h3 data-i18n="footer.nav.heading">Navigatie</h3>
@@ -173,26 +173,30 @@
             <li><a href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a href="diensten.html" data-i18n="nav.diensten">Diensten</a></li>
             <li><a href="oplossingen.html" data-i18n="nav.oplossingen">Oplossingen</a></li>
+            <li><a href="werkwijze.html" data-i18n="nav.werkwijze">Werkwijze</a></li>
             <li><a href="over.html" data-i18n="nav.over">Over Aymere</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 data-i18n="footer.legal.heading">Juridisch</h3>
+          <ul>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy en verantwoord datagebruik</a></li>
+            <li><a href="#" data-i18n="footer.terms">Algemene voorwaarden</a></li>
+            <li><a href="#" data-i18n="footer.cookies">Cookie-instellingen</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h3 data-i18n="footer.contact.heading">Contact</h3>
           <ul>
             <li><a href="mailto:contact@aymere.nl">contact@aymere.nl</a></li>
+            <li><span data-i18n="contact.location">Amsterdam &middot; Nederland</span></li>
             <li><a href="#" data-i18n="footer.linkedin">LinkedIn</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3 data-i18n="footer.legal.heading">Juridisch</h3>
-          <ul>
-            <li><a href="#" data-i18n="footer.privacy">Privacyverklaring</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright" data-i18n="footer.copyright">&copy; 2026 Aymere. Alle rechten voorbehouden.</p>
+        <p class="footer__copyright" data-i18n="footer.copyright">&copy; 2026 AYMERE. Alle rechten voorbehouden.</p>
         <div class="nav__lang" data-lang-toggle>
           <button type="button" data-lang-option="nl">NL</button>
           <span aria-hidden="true">/</span>
