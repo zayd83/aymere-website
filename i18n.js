@@ -481,6 +481,13 @@ var AYMERE_I18N_NL = {
   'privacy.item8.title': `Contact`,
   'privacy.item8.body': `Vragen over privacy en gegevensverwerking kunnen worden gericht aan: <a href="mailto:contact@aymere.nl" style="color:inherit;text-decoration:underline">contact@aymere.nl</a>`,
 
+  // ---- 404 (404.html) ----
+  '404.eyebrow': `Foutcode 404`,
+  '404.h1': `Pagina niet gevonden`,
+  '404.body': `De pagina die u zoekt bestaat niet (meer) of is verplaatst. Controleer de link of ga verder via onderstaande opties.`,
+  '404.home': `Terug naar de homepage <span class="arrow">&rarr;</span>`,
+  '404.contact': `Neem contact op`,
+
 };
 
 var AYMERE_I18N_EN = {

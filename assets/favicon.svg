@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="AYMERE">
+  <rect width="240" height="240" rx="44" fill="#f4eee2"/>
+  <g transform="translate(20 44) scale(0.923)">
+    <path fill="#17283f" fill-rule="evenodd"
+          d="M130 14 L192 128 L68 128 Z M130 60 L162 118 L98 118 Z"/>
+    <rect x="60" y="124" width="26" height="6" fill="#17283f"/>
+    <rect x="174" y="124" width="26" height="6" fill="#17283f"/>
+    <path d="M92 90 Q130 74 168 88" fill="none" stroke="#a9683a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M112 88 A11 11 0 0 1 134 88 Z" fill="#c1854f"/>
+  </g>
+</svg>
