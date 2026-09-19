@@ -19,15 +19,81 @@
     });
   }
 
-  // Contact form (stub — not connected to a backend yet)
+  // Contact form — posts to Web3Forms (form-to-email, no backend of our own).
+  // Configuration (access key, receiving address) lives in a comment above
+  // the <form> in contact.html, not here.
+  //
+  // TEST-INSTRUCTIES (handmatig controleren vóór livegang):
+  // Desktop:
+  //  - Leeg verzenden: browser toont natieve validatiemeldingen bij Naam,
+  //    Organisatie, Zakelijk e-mailadres, Uw vraagstuk en de privacy-checkbox.
+  //  - Ongeldig e-mailadres (zonder "@"): browser blokkeert verzenden.
+  //  - Alle verplichte velden + privacy-checkbox correct invullen en
+  //    versturen: succesmelding verschijnt, formulier wordt geleegd, geen
+  //    paginaherlaad en geen gegevens in de URL (POST via fetch).
+  //  - Devtools-netwerk op "Offline" zetten en opnieuw versturen: foutmelding
+  //    verschijnt met verwijzing naar contact@aymere.nl.
+  // Mobiel (get bijv. 320–414px breed):
+  //  - Alle velden/labels/meldingen blijven leesbaar, geen horizontale
+  //    scroll, toetsenbord toont het juiste type (e-mail, telefoon).
+  // Spam:
+  //  - Vul het onzichtbare "botcheck"-veld (bijv. via devtools) en verstuur:
+  //    de aanvraag wordt NIET naar Web3Forms gestuurd, maar de gebruiker
+  //    ziet alsnog de succesmelding (zodat een bot niet leert dat hij is
+  //    gedetecteerd).
   var form = document.querySelector('[data-contact-form]');
   if (form) {
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var note = form.querySelector('[data-form-note]');
+    var successFallback = 'Bedankt voor uw bericht. We hebben uw aanvraag ontvangen en nemen zo spoedig mogelijk contact met u op.';
+    var errorFallback = 'Het bericht kon niet worden verzonden. Probeer het opnieuw of stuur een e-mail naar contact@aymere.nl.';
+
+    var showNote = function (text, isError) {
+      if (!note) return;
+      note.textContent = text;
+      note.classList.toggle('form-note--error', !!isError);
+    };
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var note = form.querySelector('[data-form-note]');
-      var fallback = 'Bedankt voor uw bericht. We hebben uw aanvraag ontvangen en nemen zo spoedig mogelijk contact met u op.';
-      if (note) { note.textContent = (window.AYMERE_T && window.AYMERE_T('contact.form.success')) || fallback; }
-      form.reset();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // Honeypot: a real visitor never fills this hidden field.
+      var honeypot = form.querySelector('[name="botcheck"]');
+      if (honeypot && honeypot.value) {
+        showNote((window.AYMERE_T && window.AYMERE_T('contact.form.success')) || successFallback, false);
+        form.reset();
+        return;
+      }
+
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form)
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data && data.success) {
+            showNote((window.AYMERE_T && window.AYMERE_T('contact.form.success')) || successFallback, false);
+            form.reset();
+          } else {
+            showNote((window.AYMERE_T && window.AYMERE_T('contact.form.error')) || errorFallback, true);
+          }
+        })
+        // Only a generic notice is shown/logged here — no form field values
+        // or response bodies are written to the console.
+        .catch(function () {
+          showNote((window.AYMERE_T && window.AYMERE_T('contact.form.error')) || errorFallback, true);
+        })
+        .finally(function () {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 

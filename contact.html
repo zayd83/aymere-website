@@ -121,7 +121,27 @@
 
           <div class="form-panel">
             <p class="eyebrow" data-i18n="contact.form.eyebrow">Start een gesprek</p>
-            <form data-contact-form novalidate>
+            <!--
+              ===================================================================
+              CONFIGURATIE — vóór livegang invullen:
+              1. ACCESS_KEY_HIER hieronder vervangen door de echte Web3Forms
+                 access key. Aanvragen via https://web3forms.com — een access key
+                 wordt daar gekoppeld aan het e-mailadres waarop aanvragen
+                 binnenkomen (voor AYMERE: contact@aymere.nl). Er is geen apart
+                 "ontvangst e-mailadres"-veld nodig in dit formulier: dat e-mail-
+                 adres wordt in het Web3Forms-dashboard aan de access key gekoppeld.
+              2. Optioneel: pas de "subject"-waarde hieronder aan.
+              ===================================================================
+            -->
+            <form data-contact-form action="https://api.web3forms.com/submit" method="POST" novalidate>
+              <input type="hidden" name="access_key" value="ACCESS_KEY_HIER">
+              <input type="hidden" name="subject" value="Nieuwe aanvraag via de AYMERE-website">
+              <input type="hidden" name="from_name" value="AYMERE — Website">
+              <!-- Honeypot tegen spam: onzichtbaar voor mensen, blijft leeg. Als dit veld
+                   toch een waarde bevat, wordt de aanvraag stilzwijgend genegeerd
+                   (zie main.js) in plaats van dat de bot te kennen wordt gegeven dat hij is gedetecteerd. -->
+              <input type="text" name="botcheck" tabindex="-1" autocomplete="off"
+                style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true">
               <div class="field">
                 <label for="cf-name" data-i18n="contact.form.name.label">Naam*</label>
                 <input id="cf-name" name="name" type="text" placeholder="Uw naam" data-i18n-placeholder="contact.form.name.ph" autocomplete="name" required>
