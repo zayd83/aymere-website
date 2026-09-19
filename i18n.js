@@ -380,6 +380,82 @@ var AYMERE_I18N_NL = {
   'contact.form.direct': `Plan direct een kennismaking`,
   'contact.form.note': `Bedankt — uw bericht is genoteerd. We nemen contact met u op. (Dit formulier is nog niet gekoppeld; sluit het aan op e-mail of een service voor livegang.)`,
 
+  // ---- Werkwijze (werkwijze.html) ----
+  'werkwijze.eyebrow': `Werkwijze`,
+  'werkwijze.h1': `Eerst het juiste vraagstuk. Daarna de techniek.`,
+  'werkwijze.lead': `Een model of dashboard heeft alleen waarde wanneer het aansluit op een concrete beslissing, betrouwbare gegevens en de dagelijkse praktijk van de organisatie.`,
+
+  'werkwijze.step1.title': `Verkennen`,
+  'werkwijze.step1.intro': `We bespreken:`,
+  'werkwijze.step1.li1': `&mdash; welk probleem wordt ervaren`,
+  'werkwijze.step1.li2': `&mdash; welke beslissing ondersteund moet worden`,
+  'werkwijze.step1.li3': `&mdash; wie de oplossing gaat gebruiken`,
+  'werkwijze.step1.li4': `&mdash; welke systemen en gegevens beschikbaar zijn`,
+  'werkwijze.step1.li5': `&mdash; welke randvoorwaarden gelden`,
+
+  'werkwijze.step2.title': `Afbakenen`,
+  'werkwijze.step2.intro': `We leggen vast:`,
+  'werkwijze.step2.li1': `&mdash; de centrale onderzoeksvraag`,
+  'werkwijze.step2.li2': `&mdash; scope en uitzonderingen`,
+  'werkwijze.step2.li3': `&mdash; benodigde gegevens`,
+  'werkwijze.step2.li4': `&mdash; verwachte oplevering`,
+  'werkwijze.step2.li5': `&mdash; verantwoordelijkheden`,
+  'werkwijze.step2.li6': `&mdash; planning`,
+  'werkwijze.step2.li7': `&mdash; criteria voor evaluatie`,
+
+  'werkwijze.step3.title': `Data beoordelen`,
+  'werkwijze.step3.intro': `We controleren onder andere:`,
+  'werkwijze.step3.li1': `&mdash; definities`,
+  'werkwijze.step3.li2': `&mdash; volledigheid`,
+  'werkwijze.step3.li3': `&mdash; actualiteit`,
+  'werkwijze.step3.li4': `&mdash; ontbrekende waarden`,
+  'werkwijze.step3.li5': `&mdash; dubbeltellingen`,
+  'werkwijze.step3.li6': `&mdash; inconsistenties`,
+  'werkwijze.step3.li7': `&mdash; representativiteit`,
+  'werkwijze.step3.li8': `&mdash; privacy- en toegangsvoorwaarden`,
+
+  'werkwijze.step4.title': `Ontwikkelen`,
+  'werkwijze.step4.intro': `Afhankelijk van het project ontwikkelen we:`,
+  'werkwijze.step4.li1': `&mdash; analyse`,
+  'werkwijze.step4.li2': `&mdash; dashboard`,
+  'werkwijze.step4.li3': `&mdash; forecast`,
+  'werkwijze.step4.li4': `&mdash; scenariotool`,
+  'werkwijze.step4.li5': `&mdash; optimalisatiemodel`,
+  'werkwijze.step4.li6': `&mdash; managementrapportage`,
+
+  'werkwijze.step5.title': `Valideren`,
+  'werkwijze.step5.body': `We testen aannames, berekeningen en uitkomsten. Waar relevant vergelijken we modeluitkomsten met historische realiteit en brengen we onzekerheid in beeld.`,
+
+  'werkwijze.step6.title': `Implementeren`,
+  'werkwijze.step6.intro': `We leveren niet alleen bestanden of modellen op, maar leggen ook uit:`,
+  'werkwijze.step6.li1': `&mdash; hoe de oplossing werkt`,
+  'werkwijze.step6.li2': `&mdash; hoe uitkomsten moeten worden geïnterpreteerd`,
+  'werkwijze.step6.li3': `&mdash; welke beperkingen bestaan`,
+  'werkwijze.step6.li4': `&mdash; wie verantwoordelijk is voor gebruik en actualisatie`,
+
+  'werkwijze.step7.title': `Evalueren &amp; verbeteren`,
+  'werkwijze.step7.body': `Na implementatie kan worden beoordeeld of de oplossing voldoende bruikbaar is, moet worden aangepast of periodiek moet worden geactualiseerd.`,
+
+  // ---- Privacy (privacy.html) ----
+  'privacy.h1': `Privacy en verantwoord datagebruik`,
+  'privacy.intro': `AYMERE werkt met data om organisaties beter inzicht te geven in operationele processen en beslissingen. Zorgvuldige omgang met die data is daarom een vast onderdeel van ieder project.`,
+  'privacy.item1.title': `Doelbinding`,
+  'privacy.item1.body': `Vooraf wordt bepaald voor welk concreet doel gegevens worden gebruikt. Gegevens worden niet zonder overleg voor andere doeleinden ingezet.`,
+  'privacy.item2.title': `Dataminimalisatie`,
+  'privacy.item2.body': `We streven ernaar alleen gegevens te gebruiken die noodzakelijk zijn voor het afgesproken vraagstuk.`,
+  'privacy.item3.title': `Toegang`,
+  'privacy.item3.body': `Toegang tot projectgegevens wordt beperkt tot personen die deze voor hun werkzaamheden nodig hebben.`,
+  'privacy.item4.title': `Bewaartermijnen`,
+  'privacy.item4.body': `Voor ieder project moeten passende afspraken worden gemaakt over opslag, bewaartermijnen, overdracht en verwijdering.`,
+  'privacy.item5.title': `Zorggegevens`,
+  'privacy.item5.body': `Bij zorggerelateerde projecten wordt extra terughoudend omgegaan met persoonsgegevens. Waar mogelijk wordt gewerkt met geaggregeerde, gepseudonimiseerde of niet direct identificerende gegevens.`,
+  'privacy.item6.title': `Menselijke verantwoordelijkheid`,
+  'privacy.item6.body': `Analyses en modellen dienen ter ondersteuning. Zij vervangen niet automatisch professionele, bestuurlijke of medische verantwoordelijkheid.`,
+  'privacy.item7.title': `Overeenkomsten`,
+  'privacy.item7.body': `Waar nodig worden afspraken vastgelegd in een opdrachtbevestiging, geheimhoudingsovereenkomst, verwerkersovereenkomst of andere passende overeenkomst.`,
+  'privacy.item8.title': `Contact`,
+  'privacy.item8.body': `Vragen over privacy en gegevensverwerking kunnen worden gericht aan: <a href="mailto:contact@aymere.nl" style="color:inherit;text-decoration:underline">contact@aymere.nl</a>`,
+
 };
 
 var AYMERE_I18N_EN = {
