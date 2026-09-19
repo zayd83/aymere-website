@@ -25,8 +25,8 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var note = form.querySelector('[data-form-note]');
-      var fallback = 'Bedankt — uw bericht is genoteerd. We nemen contact met u op. (Dit formulier is nog niet gekoppeld; sluit het aan op e-mail of een service voor livegang.)';
-      if (note) { note.textContent = (window.AYMERE_T && window.AYMERE_T('contact.form.note')) || fallback; }
+      var fallback = 'Bedankt voor uw bericht. We hebben uw aanvraag ontvangen en nemen zo spoedig mogelijk contact met u op.';
+      if (note) { note.textContent = (window.AYMERE_T && window.AYMERE_T('contact.form.success')) || fallback; }
       form.reset();
     });
   }
