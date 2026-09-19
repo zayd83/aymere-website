@@ -11,13 +11,10 @@ var AYMERE_I18N_NL = {
   'nav.diensten': `Diensten`,
   'nav.oplossingen': `Oplossingen`,
   'nav.huisarts': `Huisartspraktijken`,
-  'nav.retail': `Retail &amp; groothandel`,
-  'nav.zakelijk': `Zakelijke dienstverlening`,
   'nav.andere': `Andere organisaties`,
   'nav.werkwijze': `Werkwijze`,
   'nav.over': `Over Aymere`,
   'nav.contact': `Contact`,
-  'nav.soon': `Binnenkort`,
   'nav.toggle': `Menu openen`,
   'footer.desc': `Data-analyse, forecasting en optimalisatie voor complexe operationele beslissingen.`,
   'footer.nav.heading': `Navigatie`,
@@ -221,14 +218,31 @@ var AYMERE_I18N_NL = {
   'diensten.close.cta': `Begin met uw vraagstuk <span class="arrow">&rarr;</span>`,
 
   // ---- Oplossingen ----
-  'oplossingen.eyebrow': `Oplossingen per sector`,
-  'oplossingen.h1': `Oplossingen voor uw sector.`,
-  'oplossingen.lead': `Data-uitdagingen verschillen per organisatie. Daarom vertalen we onze expertise naar concrete oplossingen per sector.`,
-  'oplossingen.pull': `Eén aanpak.<br>Toegepast per sector.`,
-  'oplossingen.item1.body': `Meer grip op zorgvraag, wachttijden, personeelsplanning en capaciteit.`,
+  'oplossingen.eyebrow': `Oplossingen`,
+  'oplossingen.h1': `Expertise toegepast op uw operationele werkelijkheid`,
+  'oplossingen.lead': `De techniek kan vergelijkbaar zijn, maar het vraagstuk, de randvoorwaarden en de beschikbare gegevens verschillen per organisatie. Daarom beginnen we altijd bij de praktijk.`,
+
+  'oplossingen.item1.body': `Meer inzicht in zorgvraag, wachttijden, telefoniedruk, agenda's, personeelscapaciteit en beschikbare ruimte.`,
+  'oplossingen.item1.listLabel': `Mogelijke vraagstukken`,
+  'oplossingen.item1.q1': `&mdash; Wanneer ontstaan structurele piekmomenten?`,
+  'oplossingen.item1.q2': `&mdash; Hoe sluiten roosters aan op de verwachte zorgvraag?`,
+  'oplossingen.item1.q3': `&mdash; Waar blijft capaciteit onbenut?`,
+  'oplossingen.item1.q4': `&mdash; Wat is het waarschijnlijke effect van extra personeelsuren?`,
+  'oplossingen.item1.q5': `&mdash; Hoe kunnen verschillende consulttypen beter worden verdeeld?`,
+  'oplossingen.item1.q6': `&mdash; Welke KPI's geven de praktijk werkelijk stuurinformatie?`,
   'oplossingen.item1.cta': `Bekijk oplossingen voor huisartspraktijken <span class="arrow">&rarr;</span>`,
-  'oplossingen.item2.body': `Beter voorspellen van vraag, voorraad en commerciële prestaties.`,
-  'oplossingen.item3.body': `Meer grip op capaciteit, planning, productiviteit en toekomstige vraag.`,
+
+  'oplossingen.item2.title': `Andere organisaties`,
+  'oplossingen.item2.body': `AYMERE ondersteunt ook organisaties buiten de huisartsenzorg bij vraagstukken rond prestaties, capaciteit, forecasting, personeelsinzet en planning.`,
+  'oplossingen.item2.listLabel': `Voorbeelden`,
+  'oplossingen.item2.ex1': `&mdash; Toekomstige vraag of omzet ramen`,
+  'oplossingen.item2.ex2': `&mdash; Personeelsbehoefte voorspellen`,
+  'oplossingen.item2.ex3': `&mdash; Verlies van tijd of capaciteit onderzoeken`,
+  'oplossingen.item2.ex4': `&mdash; Operationele KPI's samenbrengen`,
+  'oplossingen.item2.ex5': `&mdash; Scenario's vooraf doorrekenen`,
+  'oplossingen.item2.ex6': `&mdash; Complexe planning optimaliseren`,
+  'oplossingen.item2.close': `We werken niet vanuit een standaard sectorpakket, maar onderzoeken eerst of het vraagstuk, de data en onze expertise goed op elkaar aansluiten.`,
+  'oplossingen.item2.cta': `Leg uw vraagstuk aan ons voor <span class="arrow">&rarr;</span>`,
 
   // ---- Huisartspraktijken ----
   'huisarts.eyebrow': `Oplossingen &middot; Huisartspraktijken`,
@@ -319,11 +333,8 @@ var AYMERE_I18N_EN = {
   'nav.diensten': `Services`,
   'nav.oplossingen': `Solutions`,
   'nav.huisarts': `GP practices`,
-  'nav.retail': `Retail &amp; wholesale`,
-  'nav.zakelijk': `Professional services`,
   'nav.over': `About Aymere`,
   'nav.contact': `Contact`,
-  'nav.soon': `Coming soon`,
   'nav.toggle': `Open menu`,
   'footer.nav.heading': `Navigation`,
   'footer.contact.heading': `Contact`,
@@ -336,14 +347,7 @@ var AYMERE_I18N_EN = {
   // ---- Diensten (NL rewritten; EN pending) ----
 
   // ---- Oplossingen ----
-  'oplossingen.eyebrow': `Solutions by sector`,
-  'oplossingen.h1': `Solutions for your sector.`,
-  'oplossingen.lead': `Data challenges differ per organisation. That's why we translate our expertise into concrete solutions per sector.`,
-  'oplossingen.pull': `One approach.<br>Applied per sector.`,
-  'oplossingen.item1.body': `More control over care demand, waiting times, staff planning and capacity.`,
-  'oplossingen.item1.cta': `View solutions for GP practices <span class="arrow">&rarr;</span>`,
-  'oplossingen.item2.body': `Better forecasting of demand, inventory and commercial performance.`,
-  'oplossingen.item3.body': `More control over capacity, planning, productivity and future demand.`,
+  // ---- Oplossingen (NL rewritten; EN pending) ----
 
   // ---- Huisartspraktijken ----
   'huisarts.eyebrow': `Solutions &middot; GP practices`,
