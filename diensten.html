@@ -77,61 +77,128 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <div class="page-hero__grid">
-          <div class="page-hero__main">
-            <p class="eyebrow" data-i18n="diensten.eyebrow">Onze diensten</p>
-            <h1 class="h-display" data-i18n="diensten.h1">Van beter inzicht<br><span class="accent">tot slimmere planning.</span></h1>
-            <p class="lead" data-i18n="diensten.lead">Van beter inzicht tot slimme voorspellingen en geoptimaliseerde planning.</p>
-          </div>
-          <aside class="page-hero__aside">
-            <p class="pull" data-i18n="diensten.pull">Van inzicht<br>naar actie.</p>
-          </aside>
-        </div>
+        <p class="eyebrow" data-i18n="diensten.eyebrow">Diensten</p>
+        <h1 class="h-display" data-i18n="diensten.h1">Van inzicht naar een onderbouwde beslissing</h1>
+        <p class="lead" data-i18n="diensten.lead">We combineren analyse, visualisatie, forecasting en optimalisatie op basis van het vraagstuk dat uw organisatie wil oplossen.</p>
       </div>
     </section>
 
     <section class="section" style="padding-top:0">
       <div class="container">
-        <div class="svc-grid">
+        <div class="svc-grid" style="grid-template-columns:1fr">
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1"/></svg></span>
             <div class="svc__kicker"><span class="svc__num">01</span><span class="svc__pillar" data-i18n="diensten.item1.pillar">Dashboards</span></div>
-            <h3 class="svc__title" data-i18n="diensten.item1.title">KPI-dashboards &amp; managementinformatie</h3>
-            <p class="svc__body" data-i18n="diensten.item1.body">Wij brengen belangrijke bedrijfsinformatie samen in één overzichtelijk dashboard. Hierdoor ziet u direct hoe uw organisatie presteert en waar aandacht nodig is.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item1.list">Omzet &middot; kosten &middot; capaciteit &middot; productiviteit &middot; bezettingsgraad &middot; wachttijden &middot; personeelsinzet &middot; klant- of patiëntvolume</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item1.fit">Geschikt voor organisaties die veel data hebben, maar onvoldoende overzicht.</p>
+            <h3 class="svc__title" data-i18n="diensten.item1.title">Managementinformatie en KPI-dashboards</h3>
+            <p class="svc__body" data-i18n="diensten.item1.intro">We brengen relevante bedrijfsinformatie samen in een helder en bruikbaar overzicht. Niet zoveel mogelijk cijfers, maar de informatie die nodig is om prestaties te volgen en tijdig bij te sturen.</p>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.fitLabel">Geschikt wanneer</p>
+            <ul style="margin-top:.5rem;display:grid;gap:.4rem">
+              <li class="svc__body" data-i18n="diensten.item1.fit1">&mdash; informatie verspreid staat over meerdere bronnen</li>
+              <li class="svc__body" data-i18n="diensten.item1.fit2">&mdash; rapportages veel handmatig werk kosten</li>
+              <li class="svc__body" data-i18n="diensten.item1.fit3">&mdash; KPI-definities niet overal gelijk worden gebruikt</li>
+              <li class="svc__body" data-i18n="diensten.item1.fit4">&mdash; management onvoldoende actueel overzicht heeft</li>
+            </ul>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.deliverLabel">Mogelijke opleveringen</p>
+            <ul style="margin-top:.5rem;display:grid;gap:.4rem">
+              <li class="svc__body" data-i18n="diensten.item1.deliver1">&mdash; operationeel dashboard</li>
+              <li class="svc__body" data-i18n="diensten.item1.deliver2">&mdash; managementdashboard</li>
+              <li class="svc__body" data-i18n="diensten.item1.deliver3">&mdash; KPI-structuur en definities</li>
+              <li class="svc__body" data-i18n="diensten.item1.deliver4">&mdash; periodieke managementrapportage</li>
+              <li class="svc__body" data-i18n="diensten.item1.deliver5">&mdash; monitoring van capaciteit, productiviteit, bezetting of wachttijden</li>
+            </ul>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.item1.sourcesLabel">Mogelijke databronnen</p>
+            <p class="svc__body" style="margin-top:.5rem" data-i18n="diensten.item1.sources">Excel- en CSV-bestanden, planningssystemen, financiële software, CRM, telefonie en andere operationele systemen, afhankelijk van beschikbare export- of koppelmogelijkheden.</p>
+            <a class="textlink" href="contact.html" style="margin-top:1.4rem" data-i18n="diensten.item1.cta">Bespreek een dashboardvraagstuk <span class="arrow">&rarr;</span></a>
           </article>
+
+          <article class="svc">
+            <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10" cy="10" r="6"/><path d="M21 21l-5-5"/></svg></span>
+            <div class="svc__kicker"><span class="svc__num">02</span><span class="svc__pillar" data-i18n="diensten.item2.pillar">Diagnose</span></div>
+            <h3 class="svc__title" data-i18n="diensten.item2.title">Data-analyse en diagnose</h3>
+            <p class="svc__body" data-i18n="diensten.item2.intro">We onderzoeken wat er in de organisatie gebeurt en welke patronen, knelpunten of afwijkingen zichtbaar worden in de beschikbare gegevens.</p>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.fitLabel">Geschikt wanneer</p>
+            <ul style="margin-top:.5rem;display:grid;gap:.4rem">
+              <li class="svc__body" data-i18n="diensten.item2.fit1">&mdash; resultaten onverwacht veranderen</li>
+              <li class="svc__body" data-i18n="diensten.item2.fit2">&mdash; processen structureel vastlopen</li>
+              <li class="svc__body" data-i18n="diensten.item2.fit3">&mdash; capaciteit verloren lijkt te gaan</li>
+              <li class="svc__body" data-i18n="diensten.item2.fit4">&mdash; verschillende afdelingen of bronnen elkaar tegenspreken</li>
+              <li class="svc__body" data-i18n="diensten.item2.fit5">&mdash; een belangrijke beslissing eerst onderzocht moet worden</li>
+            </ul>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.deliverLabel">Mogelijke opleveringen</p>
+            <ul style="margin-top:.5rem;display:grid;gap:.4rem">
+              <li class="svc__body" data-i18n="diensten.item2.deliver1">&mdash; verkennende analyse</li>
+              <li class="svc__body" data-i18n="diensten.item2.deliver2">&mdash; proces- of performanceanalyse</li>
+              <li class="svc__body" data-i18n="diensten.item2.deliver3">&mdash; segmentanalyse</li>
+              <li class="svc__body" data-i18n="diensten.item2.deliver4">&mdash; oorzaken- en samenhanganalyse</li>
+              <li class="svc__body" data-i18n="diensten.item2.deliver5">&mdash; scenarioanalyse</li>
+              <li class="svc__body" data-i18n="diensten.item2.deliver6">&mdash; managementrapport met bevindingen en aanbevelingen</li>
+            </ul>
+            <a class="textlink" href="contact.html" style="margin-top:1.4rem" data-i18n="diensten.item2.cta">Bespreek een analysevraag <span class="arrow">&rarr;</span></a>
+          </article>
+
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M5 16l4-3 3 2 4-6"/><path d="M16 9l4-2" stroke-dasharray="2.2 2.2"/></svg></span>
-            <div class="svc__kicker"><span class="svc__num">02</span><span class="svc__pillar" data-i18n="diensten.item2.pillar">Voorspellen</span></div>
-            <h3 class="svc__title" data-i18n="diensten.item2.title">Voorspellingen</h3>
-            <p class="svc__body" data-i18n="diensten.item2.body">Wij gebruiken historische gegevens en statistische modellen om toekomstige ontwikkelingen te voorspellen.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item2.list">Vraagvoorspelling &middot; omzetforecast &middot; drukte voorspellen &middot; personeelsbehoefte &middot; capaciteitsbehoefte &middot; seizoenspatronen</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item2.fit">Geschikt voor organisaties die beter vooruit willen plannen.</p>
+            <div class="svc__kicker"><span class="svc__num">03</span><span class="svc__pillar" data-i18n="diensten.item3.pillar">Voorspellen</span></div>
+            <h3 class="svc__title" data-i18n="diensten.item3.title">Forecasting en voorspellende modellen</h3>
+            <p class="svc__body" data-i18n="diensten.item3.intro">Historische gegevens kunnen worden gebruikt om toekomstige vraag, werkdruk, omzet of benodigde capaciteit beter te ramen. Iedere voorspelling bevat onzekerheid. Daarom maken we aannames, bandbreedtes en beperkingen inzichtelijk.</p>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.fitLabel">Geschikt wanneer</p>
+            <ul style="margin-top:.5rem;display:grid;gap:.4rem">
+              <li class="svc__body" data-i18n="diensten.item3.fit1">&mdash; vraag of werkdruk sterk wisselt</li>
+              <li class="svc__body" data-i18n="diensten.item3.fit2">&mdash; seizoenspatronen aanwezig zijn</li>
+              <li class="svc__body" data-i18n="diensten.item3.fit3">&mdash; personeels- of voorraadbeslissingen vooruit moeten worden genomen</li>
+              <li class="svc__body" data-i18n="diensten.item3.fit4">&mdash; historische gemiddelden onvoldoende houvast bieden</li>
+            </ul>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.deliverLabel">Mogelijke opleveringen</p>
+            <ul style="margin-top:.5rem;display:grid;gap:.4rem">
+              <li class="svc__body" data-i18n="diensten.item3.deliver1">&mdash; vraagvoorspelling</li>
+              <li class="svc__body" data-i18n="diensten.item3.deliver2">&mdash; omzetforecast</li>
+              <li class="svc__body" data-i18n="diensten.item3.deliver3">&mdash; capaciteitsforecast</li>
+              <li class="svc__body" data-i18n="diensten.item3.deliver4">&mdash; personeelsbehoefteraming</li>
+              <li class="svc__body" data-i18n="diensten.item3.deliver5">&mdash; analyse van seizoenspatronen</li>
+              <li class="svc__body" data-i18n="diensten.item3.deliver6">&mdash; dashboard met forecast en onzekerheidsmarges</li>
+            </ul>
+            <a class="textlink" href="contact.html" style="margin-top:1.4rem" data-i18n="diensten.item3.cta">Bespreek een forecastvraagstuk <span class="arrow">&rarr;</span></a>
           </article>
+
           <article class="svc">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7h5M12 7h9M3 12h11M18 12h3M3 17h8M15 17h6"/><circle cx="9" cy="7" r="1.7" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="11.5" cy="17" r="1.7" fill="currentColor" stroke="none"/></svg></span>
-            <div class="svc__kicker"><span class="svc__num">03</span><span class="svc__pillar" data-i18n="diensten.item3.pillar">Plannen</span></div>
-            <h3 class="svc__title" data-i18n="diensten.item3.title">Planning &amp; optimalisatie</h3>
-            <p class="svc__body" data-i18n="diensten.item3.body">Wij berekenen hoe mensen, tijd en middelen zo efficiënt mogelijk kunnen worden ingezet.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item3.list">Personeelsplanning &middot; roosteroptimalisatie &middot; capaciteitsplanning &middot; agenda-optimalisatie &middot; voorraadplanning &middot; resource allocation</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item3.fit">Geschikt voor organisaties waar capaciteit schaars is en planning complex wordt.</p>
+            <div class="svc__kicker"><span class="svc__num">04</span><span class="svc__pillar" data-i18n="diensten.item4.pillar">Plannen</span></div>
+            <h3 class="svc__title" data-i18n="diensten.item4.title">Planning en optimalisatie</h3>
+            <p class="svc__body" data-i18n="diensten.item4.intro">Wanneer mensen, tijd, ruimtes of middelen schaars zijn, berekenen we welke verdeling binnen de gestelde voorwaarden het beste aansluit op het gekozen doel.</p>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.fitLabel">Geschikt wanneer</p>
+            <ul style="margin-top:.5rem;display:grid;gap:.4rem">
+              <li class="svc__body" data-i18n="diensten.item4.fit1">&mdash; planning veel handmatig werk kost</li>
+              <li class="svc__body" data-i18n="diensten.item4.fit2">&mdash; verschillende belangen en randvoorwaarden samenkomen</li>
+              <li class="svc__body" data-i18n="diensten.item4.fit3">&mdash; vraag en capaciteit onvoldoende aansluiten</li>
+              <li class="svc__body" data-i18n="diensten.item4.fit4">&mdash; meerdere scenario's objectief moeten worden vergeleken</li>
+            </ul>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.deliverLabel">Mogelijke opleveringen</p>
+            <ul style="margin-top:.5rem;display:grid;gap:.4rem">
+              <li class="svc__body" data-i18n="diensten.item4.deliver1">&mdash; personeels- of roosteroptimalisatie</li>
+              <li class="svc__body" data-i18n="diensten.item4.deliver2">&mdash; capaciteitsplanning</li>
+              <li class="svc__body" data-i18n="diensten.item4.deliver3">&mdash; agenda-optimalisatie</li>
+              <li class="svc__body" data-i18n="diensten.item4.deliver4">&mdash; resource allocation</li>
+              <li class="svc__body" data-i18n="diensten.item4.deliver5">&mdash; scenariotool</li>
+              <li class="svc__body" data-i18n="diensten.item4.deliver6">&mdash; optimalisatiemodel met praktisch implementatieadvies</li>
+            </ul>
+            <a class="textlink" href="contact.html" style="margin-top:1.4rem" data-i18n="diensten.item4.cta">Bespreek een planningsvraagstuk <span class="arrow">&rarr;</span></a>
           </article>
+
           <article class="svc">
-            <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20V4M3 20h18"/><path d="M6 15l4-5 3 3 5-7"/><circle cx="18" cy="6" r="1.2" fill="currentColor" stroke="none"/></svg></span>
-            <div class="svc__kicker"><span class="svc__num">04</span><span class="svc__pillar" data-i18n="diensten.item4.pillar">Analyseren</span></div>
-            <h3 class="svc__title" data-i18n="diensten.item4.title">Data-analyse</h3>
-            <p class="svc__body" data-i18n="diensten.item4.body">Wij onderzoeken bedrijfsdata om knelpunten, patronen, verspilling en kansen zichtbaar te maken.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item4.list">Procesanalyse &middot; performance-analyse &middot; klantanalyse &middot; scenarioanalyse &middot; knelpuntanalyse</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item4.fit">Geschikt voor organisaties die willen begrijpen waarom bepaalde resultaten ontstaan.</p>
-          </article>
-          <article class="svc svc--span2">
             <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8M20 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 16M4 21v-5h5"/></svg></span>
             <div class="svc__kicker"><span class="svc__num">05</span><span class="svc__pillar" data-i18n="diensten.item5.pillar">Monitoren</span></div>
-            <h3 class="svc__title" data-i18n="diensten.item5.title">Doorlopende monitoring &amp; advies</h3>
-            <p class="svc__body" data-i18n="diensten.item5.body">Wij kunnen dashboards, forecasts en optimalisatiemodellen na oplevering blijven actualiseren.</p>
-            <p style="margin-top:.6rem;font-size:.82rem;color:var(--ink-soft)" data-i18n="diensten.item5.list">Maandelijkse KPI-monitoring &middot; periodieke forecast &middot; herberekening van planning &middot; managementrapportage &middot; periodiek advies</p>
-            <p class="pull" style="margin-top:.75rem;font-size:.86rem" data-i18n="diensten.item5.fit">Geschikt voor organisaties die structureel op data willen sturen.</p>
+            <h3 class="svc__title" data-i18n="diensten.item5.title">Monitoring en doorontwikkeling</h3>
+            <p class="svc__body" data-i18n="diensten.item5.intro">Een dashboard, forecast of model kan periodiek worden bijgewerkt wanneer nieuwe gegevens beschikbaar komen. Zo blijft de oplossing aansluiten op veranderingen in de organisatie.</p>
+            <p class="svc__pillar" style="margin-top:1.1rem" data-i18n="diensten.item5.supportLabel">Mogelijke ondersteuning</p>
+            <ul style="margin-top:.5rem;display:grid;gap:.4rem">
+              <li class="svc__body" data-i18n="diensten.item5.support1">&mdash; periodieke actualisatie</li>
+              <li class="svc__body" data-i18n="diensten.item5.support2">&mdash; kwaliteitscontrole</li>
+              <li class="svc__body" data-i18n="diensten.item5.support3">&mdash; monitoring van KPI's</li>
+              <li class="svc__body" data-i18n="diensten.item5.support4">&mdash; herberekening van forecasts</li>
+              <li class="svc__body" data-i18n="diensten.item5.support5">&mdash; herijking van modellen</li>
+              <li class="svc__body" data-i18n="diensten.item5.support6">&mdash; uitbreiding met nieuwe databronnen of vraagstukken</li>
+            </ul>
+            <a class="textlink" href="contact.html" style="margin-top:1.4rem" data-i18n="diensten.item5.cta">Bespreek doorlopende ondersteuning <span class="arrow">&rarr;</span></a>
           </article>
         </div>
       </div>
@@ -140,7 +207,9 @@
     <section class="section" style="padding-top:0">
       <div class="container">
         <div class="how-close">
-          <a class="btn btn-primary" href="contact.html" data-i18n="cta.plan">Bespreek uw vraagstuk <span class="arrow">&rarr;</span></a>
+          <h2 data-i18n="diensten.close.title">Niet zeker welke dienst past?</h2>
+          <p class="lead" style="margin:0 auto" data-i18n="diensten.close.body">Dat hoeft ook niet. Vertel ons welk probleem, proces of besluit u wilt onderzoeken. Wij bepalen vervolgens welke aanpak daarbij past.</p>
+          <a class="btn btn-primary" href="contact.html" data-i18n="diensten.close.cta">Begin met uw vraagstuk <span class="arrow">&rarr;</span></a>
         </div>
       </div>
     </section>
