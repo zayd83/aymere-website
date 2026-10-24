@@ -1,0 +1,57 @@
+AYMERE-website, versie 17 oktober 2026
+=====================================
+
+WAT DIT IS
+De complete website als losse bestanden, klaar om online te zetten:
+- index.html: de hele site in één pagina (Home, AYMERE One, Huisartsenpraktijken,
+  Intelligence, Over AYMERE, Privacy en Contact).
+- assets/video: alle video's en stilstaande beelden die de site gebruikt (54 bestanden).
+- favicon-32.png, favicon-192.png, apple-touch-icon.png: het icoon in het browsertabblad.
+
+Er is geen build-stap, geen framework en geen database nodig. De lettertypen en het logo
+zitten in de pagina zelf; de pagina laadt niets van andere websites.
+
+
+ONLINE ZETTEN
+1. Zet de hele map online: index.html in de hoofdmap van het domein, de map assets ernaast.
+   Laat alle map- en bestandsnamen precies zoals ze zijn.
+2. Op Vercel: maak een project van deze map (of vervang de bestanden in de bestaande
+   repository). Framework preset "Other", geen build command, de hoofdmap als output.
+3. De pagina's werken met #-adressen, bijvoorbeeld aymere.nl/#huisartspraktijken,
+   /#intelligence, /#over, /#privacy en /#contact. Daarvoor hoeft niets ingesteld te worden.
+
+
+WAT ER IN DEZE VERSIE IS VERANDERD
+- De AI-beelden zijn vervangen door video's:
+  - bovenaan AYMERE One, Huisartsenpraktijken en Intelligence staan nieuwe achtergrondvideo's
+    (bestanden met -v2-wide.mp4 voor desktop en -v2-tall.mp4 voor telefoons);
+  - op de homepage staat leert-van-elke-week.mp4 op de plek van het beeld met de veer.
+- Stond er al een eerdere versie online? Dan worden deze oude bestanden niet meer gebruikt en
+  mogen ze weg: aymere-one-wide.*, aymere-one-tall.*, huisartsen-wide.*, huisartsen-tall.*,
+  intelligence-wide.* en intelligence-tall.* (de .mp4-, .webm-, .jpg- en .webp-versies).
+
+
+OVER DE VIDEO'S
+- Alle video's zijn mp4 (H.264), zonder geluid.
+- Ze starten vanzelf zodra ze in beeld komen en pauzeren als ze uit beeld zijn. Elke video
+  heeft een pauzeknop. Bij een databesparende verbinding blijft het stilstaande beeld staan.
+- Samen zijn ze ongeveer 50 MB, maar een bezoeker laadt alleen de video's van de pagina die hij
+  bekijkt, en pas als ze in beeld komen.
+
+
+VOOR HET LIVE GAAT, EVEN NAKIJKEN
+- In de privacyverklaring staat dat Vercel de website host en dat we een e-mailprovider
+  gebruiken. Klopt dat niet, pas dan die tekst aan.
+- Het contactformulier opent het e-mailprogramma van de bezoeker met een bericht aan
+  contact@aymere.nl. Daar is geen server voor nodig.
+- Voor het voorbeeld bij gedeelde links (LinkedIn, WhatsApp) staat https://aymere.nl ingesteld
+  (de regels met og:image en og:url in index.html). Komt de site op een ander adres, pas die
+  twee regels dan aan.
+- De site plaatst geen cookies en gebruikt geen analytics. Zo staat het ook in de
+  privacyverklaring; komt er later toch analytics bij, dan moet die tekst mee veranderen.
+
+
+BOUW JE DE SITE IN JE EIGEN SYSTEEM?
+Dan kun je de video's en stilstaande beelden uit assets/video gewoon overnemen. In index.html
+zie je per pagina waar elke video staat: de achtergrondvideo's bovenaan staan bij data-bgvideo,
+de video's in de pagina bij class="loop".
