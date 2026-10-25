@@ -43,7 +43,7 @@ VOOR HET LIVE GAAT, EVEN NAKIJKEN
 - In de privacyverklaring staat dat Vercel de website host en dat we een e-mailprovider
   gebruiken. Klopt dat niet, pas dan die tekst aan.
 - Het contactformulier verstuurt aanvragen via FormSubmit (formsubmit.co) als e-mail naar
-  info@annofixinstallaties.nl. Daar is geen eigen server voor nodig. De allereerste aanvraag
+  contact@aymere.nl. Daar is geen eigen server voor nodig. De allereerste aanvraag
   levert een activatiemail op in die inbox: klik op de activatielink, anders komt er niets binnen.
   Lukt het versturen niet, dan opent het e-mailprogramma van de bezoeker met het bericht, en
   staat het bericht klaar om te kopiëren.
